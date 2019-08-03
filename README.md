@@ -23,7 +23,7 @@ We used various languages to deploy this app.
 
 ###Deployed Link
 
-https://whispering-beach-90569.herokuapp.com/
+https://finalbootcamp.herokuapp.com/
 
 
 Thank you from the Mapa Team
