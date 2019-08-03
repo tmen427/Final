@@ -2,11 +2,11 @@
 
 ### Overview
 
-Mapa is a simple crowdsourcing app that allows users to identify the location of points of interests typically not found in other map apps. The first version of this app we are allowing the community to mark where bicyle racks, water fountains, and bathrooms are so that others may get directions to these locations.
+Mapa, (spanish word for map) is a simple crowdsourcing app that allows users to identify the location of points of interests typically not found in other map apps. In first version of this app we are allowing the community to mark where bicyle racks, water fountains, and bathrooms. Users may crowdsource and work togethor to find difficult or unkown bicycle racks, water fountains and bathrooms. 
 
 ### Technologies Used
 
-We used various languages to deploy this app.
+We used various languages to deploy this app:
 
 
  Front-End: HTML,
