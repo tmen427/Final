@@ -9,16 +9,16 @@ Mapa is a simple crowdsourcing app that allows users to identify the location of
 We used various languages to deploy this app.
 
 
- Front-End: HTML
-            CSS
-            Javascript
-            Bootstrap
-            Font Awesome
+ Front-End: HTML,
+            CSS,
+            Javascript,
+            Bootstrap,
+            Font Awesome,
             Mapbox
   
-  Backend: MongoDB
-           Passport
-           Nodejs
+  Backend: MongoDB,
+           Passport,
+           Nodejs,
            React
 
 ###Deployed Link
