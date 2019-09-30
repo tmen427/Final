@@ -6,10 +6,8 @@ function Footer(){
         <div>
         
         <footer>
-            <text className="copyright">copyright &copy; <span style={{color: "grey"}}>MA</span><span style={{color: "red"}}>PA</span></text>
-            <a className="gitlink" href="https://github.com/pith0n/Crowd-Source">
-            <img className="github" src={ require("./img/GitHub.png")}/>
-            </a>
+            <div class="copyright">copyright &copy; 2019 <i>MAPA</i></div>
+          
         </footer>
         </div>
     )
