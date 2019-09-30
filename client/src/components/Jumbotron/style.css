@@ -7,13 +7,20 @@
 .jumbotron {
   min-height: 300px;
   padding-top: 100px;
-  background-image: url("./img/sunrise.jpg");
-
+  background-image: url("./img/bick.jpg");
+ 
   color: whitesmoke;
 }
 .link{
   color:red;
   font-weight: bold;
   font-family: 'Times New Roman', Times, serif;
+}
+#text {
+  z-index: 50px;
+  font-size: 50px; 
+  line-height: 60px; 
+  font-family: 'Courier New', Courier, monospace; 
+  color: black; 
 }
 

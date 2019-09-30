@@ -80,7 +80,7 @@ class Search extends Component {
                                                 name="locationSearch"
                                                 value={this.state.locationSearch}
                                                 onChange={this.handleInputChange}
-                                                placeholder="Search for Venue"
+                                                placeholder="Enter a Location"
                                             />
                                         </Col>
                                         <Col size="xs-3 sm-2">
