@@ -14,7 +14,7 @@ body{
 	height:100%;
 	text-align:center;
 	background: white; 
-	color: #23b6cd;
+	color: white; 
 	font-family: 'Quicksand', sans-serif;
 }
 @-o-viewport {width: device-width;}
@@ -282,7 +282,7 @@ h1.text-center{
 	box-shadow: 0px 0px 0px 7px rgba(0,0,0,0.2);
 }
 .dark-header {
-	background:#23b6cd;
+	background:white; 
 }
 .fs-header {
 	padding:0px 50px;
@@ -303,7 +303,7 @@ h1.text-center{
 	position:relative;
 	top:20px;
 	border-radius:30px;
-	color:#fff;
+	color:black;
 	font-weight:700;
 	text-transform:uppercase;
 	font-size:11px;
@@ -329,7 +329,7 @@ h1.text-center{
 	font-weight:600;
 }
 .dark-header .show-reg-form {
-	color:#fff;
+	color:black;
 }
 .show-reg-form:before {
 	content:'';
@@ -603,7 +603,7 @@ h1.text-center{
     transition: all 100ms linear;
 }
 .dark-header .nav-holder nav li a  {
-	color:#fff;
+	color:black; 
 }
 .nav-holder nav li a:before {
 	content:'';
