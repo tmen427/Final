@@ -281,8 +281,12 @@ h1.text-center{
 	border-radius:30px;
 	box-shadow: 0px 0px 0px 7px rgba(0,0,0,0.2);
 }
+ul {
+	list-style-type: none;
+   }
+
 .dark-header {
-	background:white; 
+	background:#23b6cd; 
 }
 .fs-header {
 	padding:0px 50px;
