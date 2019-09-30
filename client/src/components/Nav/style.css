@@ -13,7 +13,7 @@ body{
 	font-size: 13px;
 	height:100%;
 	text-align:center;
-	background:rgb(198, 233, 255);
+	background: white; 
 	color: #23b6cd;
 	font-family: 'Quicksand', sans-serif;
 }
