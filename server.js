@@ -249,11 +249,11 @@ app.delete("/api/locations/:id", function (req, res) {
   .catch(err => res.status(422).json(err));
 });
 
-
+/** 
 app.get("*", function (req, res) {
  res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
-
+**/
 /** 
 app.post("/api/signup", function(req, res) {         // these routes will match with the login and signup 
   //        console.log('api-routes.js: ' + req.body.email);  
