@@ -7,7 +7,8 @@
 .jumbotron {
   min-height: 400px;
   padding-top: 100px;
-  background-image: url("./img/building.jpeg");
+ background-image: url("./img/building.jpeg"); 
+
   background-size: 100%; 
   color: whitesmoke;
 }
@@ -19,9 +20,20 @@
 }
 #text {
   z-index: 50px;
+  font-size: 100px; 
+  line-height: 60px; 
+  font-family: 'Times New Roman';  
+  color: white ;
+  padding: 20px; 
+}
+#second {
+  z-index: 50px;
   font-size: 50px; 
   line-height: 60px; 
   font-family: 'Times New Roman';  
   color: white; 
+  padding: 20px; 
+  font-style: bold; 
+  font-weight: bold;
 }
 
