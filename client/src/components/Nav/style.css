@@ -19,6 +19,7 @@ body{
 	color: white; 
 	font-family: 'Quicksand', sans-serif;**/
 
+
 	min-height: 100vh; /* will cover the 100% of viewport */
 
 	
@@ -169,22 +170,26 @@ h1.text-center{
 	width:100%;
 	position:relative;
 	z-index:5;
-	padding-top:80px;
+	padding: 0px !important; 
+
 }
 #wrapper.no-padding {
-	padding-top:0;
+	padding-top:0px !important;
 }
 .content, .col-md-12, .col-sm-12 {
 	width:100%;
-	position:relative;
-	z-index:4;
+	position:static;
+	z-index:10;
 	float:left;
-	background:#fff;
-	padding: 20px;
-	overflow: hidden;
+	background: white;
+
+	margin: 10px;
+	margin-top: 60px ;
+	padding: 0px !important; 
+
 }
 .content.fs-slider-wrap{
-	padding-top:80px;
+
 }
 .fl-wrap {
 	float:left;
@@ -1181,7 +1186,7 @@ section.gray-section .section-separator {
     padding: 250px 0 400px;
 }
 }
-/**
+
 @media only screen and  (max-width: 1064px) {
 .nav-button-wrap , .mob-bg{
 	display:block;
@@ -1565,4 +1570,3 @@ header.main-header {
 	background-color: #23b6cd;
 	border-color: #088a9f;
 }
-**/

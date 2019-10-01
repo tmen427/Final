@@ -8,9 +8,11 @@
   min-height: 400px;
   padding-top: 100px;
  background-image: url("./img/building.jpeg"); 
-
+background-repeat: no-repeat;
+background-size: cover; 
+position: relative;
   background-size: 100%; 
-  color: whitesmoke;
+  color: white; 
 }
 
 .link{
