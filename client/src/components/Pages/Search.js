@@ -15,7 +15,7 @@ class Search extends Component {
     };
 
     componentDidMount() {
-        this.loadSearch();
+      //  this.loadSearch();    //this will load the previous search when you go on the homepage, now turned off 
     }
 
     loadSearch = () => {
