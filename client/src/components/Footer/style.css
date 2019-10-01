@@ -1,7 +1,7 @@
 footer {
     text-align: center;
     color: white;
-    position: relative;
+    position: absolute; 
     background-color: #23b6cd;
     vertical-align: center;
     bottom: 0px;
@@ -11,9 +11,11 @@ footer {
 }
 
 .copyright {
+   
     text-align: center;
-    padding: 10px;
-    
+    padding: 25px;
+ 
+    bottom: 0px; 
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -21,5 +23,7 @@ footer {
     line-height: 25px;
     font-family: sans-serif;
     color: white;
-    margin-top: 150px;
+    margin-top: 0px; 
+   
+    
 }

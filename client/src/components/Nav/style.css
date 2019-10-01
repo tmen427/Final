@@ -3,19 +3,28 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,800i,900|Quicksand:300,400,500,700&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese');
 /*-------------General Style---------------------------------------*/
 html{
-	overflow-x:hidden !important;
+	
 	height:100%;
+	position: relative;
 }
 body{
-	margin: 0;
-	padding: 0;
+/**
+	margin: 10px 0px;
+	padding-bottom: 60px; 
 	font-weight: 400;
 	font-size: 13px;
 	height:100%;
 	text-align:center;
 	background: white; 
 	color: white; 
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Quicksand', sans-serif;**/
+
+	min-height: 100vh; /* will cover the 100% of viewport */
+
+	
+	position: relative;
+	padding-bottom: 100px;
+
 }
 @-o-viewport {width: device-width;}
 @-ms-viewport {width: device-width;}

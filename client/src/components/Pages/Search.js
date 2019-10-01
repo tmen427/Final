@@ -100,7 +100,7 @@ class Search extends Component {
                     <Row>
                         <Col size="xs-12">
                             {!this.state.venues.length ? (
-                                <h1 className="text-center">No Search Display</h1>
+                                <h1 className="text-center"></h1>
                             ) : (
                                     <List>
                                         {this.state.venues.map(venue => {
