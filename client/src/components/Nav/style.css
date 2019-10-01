@@ -1181,10 +1181,12 @@ section.gray-section .section-separator {
     padding: 250px 0 400px;
 }
 }
+/**
 @media only screen and  (max-width: 1064px) {
 .nav-button-wrap , .mob-bg{
 	display:block;
 }
+
 .fixed-footer {
 	position:relative !important;
 	float:left;
@@ -1563,3 +1565,4 @@ header.main-header {
 	background-color: #23b6cd;
 	border-color: #088a9f;
 }
+**/
