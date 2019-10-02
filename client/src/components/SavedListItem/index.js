@@ -30,7 +30,7 @@ export function ListItem({
             <p><strong>Category: </strong> {category}</p>
             <p><strong>Longitude: </strong>{longitude}, <strong>Latitude: </strong>{latitude}</p>
             <a rel="noreferrer noopener" target="_blank" href={`http://en.wikipedia.org/w/index.php?title=Special:Search&search=${name}`}>
-              Go to the Venue
+              Check wikipedia
             </a>
             <button className="btn btn-lg btn-warning savedButton ml-5 float-right" type="button" onClick={onClick}>Delete</button>
           </Col>
