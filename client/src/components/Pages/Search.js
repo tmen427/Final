@@ -57,13 +57,15 @@ class Search extends Component {
                        
 
                                  // put the below longgitude and latitude in setstate if you want to retrieve it later in componentditmount
-                                 if (search === this.state.locationSearch) {
+                                 if (search === this.state.locationSearch.trim()) {
+                                     console.log(this.state.locationSearch)
                                      console.log("longitude "  + " " + res.data[i].longitude); 
                                      console.log("latitude " + " " + res.data[i].latitude); 
                                    //  console.log(res.data[i]._id); 
                                   this.handleSaved(res.data[i]._id);   // now if algorithm works it will save into database!
                                  console.log(this.state.venues[this.state.venues.length-1]) 
-                                
+                                       // changing the state to true see below if to redirect the route
+            this.setState ({toLink:true});
                               break; 
                                  
                                  }
@@ -77,11 +79,10 @@ class Search extends Component {
                        
                 })
                 .catch(err => console.log(err))
-           , 3000);
+           , 10);
 
            
-           // changing the state to true see below if to redirect the route
-            this.setState ({toLink:true});
+    
          
        
 
@@ -150,7 +151,7 @@ class Search extends Component {
                             ) : (
                                     <List>
                                         {this.state.venues.map(venue => {
-                                            if (venue ) {
+                                            if (venue.saved ) {
                                                 return (
                                                     < ListItem
                                                         key={venue._id}
