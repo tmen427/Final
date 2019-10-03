@@ -144,7 +144,9 @@ class Search extends Component {
                             </form>
                         </Col>
                     </Row>
+                    
                     <Row>
+                        {/*
                         <Col size="xs-12">
                             {!this.state.venues.length ? (
                                 <h1 className="text-center">  </h1>
@@ -169,6 +171,7 @@ class Search extends Component {
 
                                 )}
                         </Col>
+                                     comment this out for now       */}
                     </Row>
                 </Container>
             </div>
