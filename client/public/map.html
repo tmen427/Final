@@ -1736,7 +1736,7 @@ header.main-header {
    
 
 	<footer>
-        <text class="copyright">**NOTE: this page is still under construction, if you would like to add a location click on a feature and double click on the map!  </text>
+        <text class="copyright">**NOTE: this page is still under construction, if you would like to add a location click on a marker type and double click on the map!  </text>
      
         </a>
     </footer>
@@ -1748,14 +1748,96 @@ header.main-header {
 $(document).ready(function(){
 
 
+
+//alright get the values from the database.......whatever the most recent value is get that
+var x; 
+var y; 
+$.get('/api/searchs/', function(data,status) {
+	// the logic is whatever is the latest value that has been saved get that
+
+for (var i=0; i<data.length; i++)  {	
+	if (data[i].saved === true) {
+		{
+			console.log(data[data.length-1].name)  //u have all the saved values now get the last one 
+			console.log(data[data.length-1].longitude)
+			console.log(data[data.length-1].latitude)
+			 x = data[data.length-1].longitude;
+			 y = data[data.length-1].latitude;
+		}}			
+			
+		};	
+/**		mapboxgl.accessToken = 'pk.eyJ1IjoiZGF2aWR2bzE5OTAiLCJhIjoiY2p4MmsyOXJsMDAxYTQ4cGg3cHMwcTZkMCJ9.mHHhKy1QIfmGF_TC88vSUg';
+
+var map = new mapboxgl.Map({
+	container: 'map',
+	style: 'mapbox://styles/mapbox/streets-v11',
+	center: [x,y],
+	zoom: 13,
+   
+});
+	**/
+			
+
+})
+
+setTimeout(function(){ 
+	mapboxgl.accessToken = 'pk.eyJ1IjoiZGF2aWR2bzE5OTAiLCJhIjoiY2p4MmsyOXJsMDAxYTQ4cGg3cHMwcTZkMCJ9.mHHhKy1QIfmGF_TC88vSUg';
+
+var map = new mapboxgl.Map({
+	container: 'map',
+	style: 'mapbox://styles/mapbox/streets-v11',
+	center: [x, y],
+	zoom: 13,
+   
+});
+
+map.addControl(new mapboxgl.FullscreenControl());	
+map.addControl(new mapboxgl.NavigationControl());
+var userLocation = new mapboxgl.GeolocateControl({
+	positionOptions: {
+		enableHighAccuracy: true
+	},
+	trackUserLocation: true
+})
+map.addControl(userLocation);
+userLocation.on('geolocate', function (e) {
+	var lon = e.coords.longitude;
+	var lat = e.coords.latitude
+	var position = [lon, lat];
+	// console.log(position);
+	mapDirections.setOrigin(position)
+
+});
+	
+var mapDirections = new MapboxDirections({
+	accessToken: mapboxgl.accessToken
+})
+map.addControl(mapDirections, 'top-left');
+
+
+   //}, 100);
+
+/**
 mapboxgl.accessToken = 'pk.eyJ1IjoiZGF2aWR2bzE5OTAiLCJhIjoiY2p4MmsyOXJsMDAxYTQ4cGg3cHMwcTZkMCJ9.mHHhKy1QIfmGF_TC88vSUg';
+
 var map = new mapboxgl.Map({
 	container: 'map',
 	style: 'mapbox://styles/mapbox/streets-v11',
 	center: [-93.258133, 44.986656],
-	zoom: 12,
+	zoom: 13,
    
 });
+
+
+**/
+
+
+
+
+
+
+
+
 
 
 var clearAll = document.getElementById('clearAll');
@@ -1938,13 +2020,14 @@ map.on('mousemove', function (e) {
 });
 **/
 // View a fullscreen map
-map.addControl(new mapboxgl.FullscreenControl());
+//map.addControl(new mapboxgl.FullscreenControl());
 
 // Add zoom and rotation controls to the map.
-map.addControl(new mapboxgl.NavigationControl());
+//map.addControl(new mapboxgl.NavigationControl());
 
 // Locate the user
 // Add geolocate control to the map.
+/**
 var userLocation = new mapboxgl.GeolocateControl({
 	positionOptions: {
 		enableHighAccuracy: true
@@ -1960,14 +2043,21 @@ userLocation.on('geolocate', function (e) {
 	mapDirections.setOrigin(position)
 
 });
-
+**/
 
 
 //Directions navigation
+/**
 var mapDirections = new MapboxDirections({
 	accessToken: mapboxgl.accessToken
 })
 map.addControl(mapDirections, 'top-left');
+
+**/
+
+
+
+
 
 // mapDirections.setOrigin([-93.256, 44.985])
 // mapDirections.setDestination([-93.259, 44.989])
@@ -2095,6 +2185,11 @@ console.log( features1[0].geometry.coordinates );  //basically the coordites are
 var address1 = ""; 
 
 
+//somehow get the longitude and latitude from the search bar. it's in your database bro
+
+
+
+
 function newcoords (longitude, latitude,type) {
 var x = 'https://api.mapbox.com/geocoding/v5/mapbox.places/'+longitude+','+latitude+'.json?types=address&access_token=pk.eyJ1IjoiZGF2aWR2bzE5OTAiLCJhIjoiY2p4MmsyOXJsMDAxYTQ4cGg3cHMwcTZkMCJ9.mHHhKy1QIfmGF_TC88vSUg';
 //console.log(x);
@@ -2178,6 +2273,11 @@ $("input[type='radio']").on('click', function () {
   selectedValue = $("input[name=feature]:checked").val();
 //     console.log(selectedValue);
 });
+
+
+
+
+}, 100);  // this ends the settimeout. maybe not the best solution. is there an alternative?
 
 
 });

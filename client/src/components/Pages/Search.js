@@ -62,8 +62,9 @@ class Search extends Component {
                                      console.log("latitude " + " " + res.data[i].latitude); 
                                    //  console.log(res.data[i]._id); 
                                   this.handleSaved(res.data[i]._id);   // now if algorithm works it will save into database!
-                                  console.log(this.state.venues[i]) 
-                                  break; 
+                                 console.log(this.state.venues[this.state.venues.length-1]) 
+                                
+                              break; 
                                  
                                  }
                                  else {
@@ -72,14 +73,15 @@ class Search extends Component {
                                       
                                  
                             }
-             
+
+                       
                 })
                 .catch(err => console.log(err))
            , 3000);
 
            
            // changing the state to true see below if to redirect the route
-          //   this.setState ({toLink:true});
+            this.setState ({toLink:true});
          
        
 
@@ -148,7 +150,7 @@ class Search extends Component {
                             ) : (
                                     <List>
                                         {this.state.venues.map(venue => {
-                                            if (venue.saved) {
+                                            if (venue ) {
                                                 return (
                                                     < ListItem
                                                         key={venue._id}
