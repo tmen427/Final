@@ -1707,20 +1707,25 @@ header.main-header {
     <div class="featurediv">
         <form action="#" method="post" class="featureForm" id="featureForm">
             <fieldset class="scheduler-border">
-                <legend class="scheduler-border">Pick a feature in the Map</legend>
+  
+	
+				<legend class="scheduler-border">Add Marker</legend>
+				
  <div id='menu'>
+	 
 		<input id='streets-v11' type='radio' name='rtoggle' value='streets' checked='checked'>
 		<label for='streets'>Street View</label>
 		<input id='satellite-v9' type='radio' name='rtoggle' value='satellite'>
 		<label for='satellite'>Satellite View</label>
+		<!--
 		<input id='light-v10' type='radio' name='rtoggle' value='light'>
 <label for='light'>Light View</label>
 <input id='dark-v10' type='radio' name='rtoggle' value='dark'>
 <label for='dark'>Dark View</label>
-
-		
+		-->
+ 
 		</div>
-                <p>Select or Add Marker:&nbsp;
+                <p>
                     <label><input type="radio" id="feature" name="feature" value="water" /> Water Fountain</label>
                     <label><input type="radio" id="feature" name="feature" value="bathroom" /> Bathroom</label>
                     <label><input type="radio" id="feature" name="feature" value="bicycle" /> Bicycle Rack</label>
@@ -1736,7 +1741,7 @@ header.main-header {
    
 
 	<footer>
-        <text class="copyright">**NOTE: this page is still under construction, if you would like to add a location click on a marker type and double click on the map!  </text>
+        <text class="copyright">Add a location by clicking on a marker type and double clicking the map! </text>
      
         </a>
     </footer>
@@ -1784,6 +1789,8 @@ var map = new mapboxgl.Map({
 	zoom: 13,
    
 });
+map.doubleClickZoom.disable()
+
 
 map.addControl(new mapboxgl.FullscreenControl());	
 map.addControl(new mapboxgl.NavigationControl());
@@ -1806,10 +1813,12 @@ userLocation.on('geolocate', function (e) {
 var mapDirections = new MapboxDirections({
 	accessToken: mapboxgl.accessToken
 })
-map.addControl(mapDirections, 'top-left');
 
 
-   //}, 100);
+//map.addControl(mapDirections, 'top-left');   this is search bar on the top left of the screen 
+
+
+   //}, 100); closed  below
 
 /**
 mapboxgl.accessToken = 'pk.eyJ1IjoiZGF2aWR2bzE5OTAiLCJhIjoiY2p4MmsyOXJsMDAxYTQ4cGg3cHMwcTZkMCJ9.mHHhKy1QIfmGF_TC88vSUg';
