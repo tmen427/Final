@@ -1643,7 +1643,10 @@ header.main-header {
 </head>
 
 <body>
-       
+		<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.min.js'></script>
+		<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.css' type='text/css' />   
+	
+
     <script
         src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.0/mapbox-gl-directions.js'></script>
     <link rel='stylesheet'
@@ -1791,9 +1794,16 @@ var map = new mapboxgl.Map({
 });
 map.doubleClickZoom.disable()
 
-
+ 
+	
+ 
+ map.addControl(new MapboxGeocoder({
+    accessToken: mapboxgl.accessToken,
+    mapboxgl: mapboxgl
+}));
 map.addControl(new mapboxgl.FullscreenControl());	
 map.addControl(new mapboxgl.NavigationControl());
+/**
 var userLocation = new mapboxgl.GeolocateControl({
 	positionOptions: {
 		enableHighAccuracy: true
@@ -1809,13 +1819,16 @@ userLocation.on('geolocate', function (e) {
 	mapDirections.setOrigin(position)
 
 });
-	
+
 var mapDirections = new MapboxDirections({
 	accessToken: mapboxgl.accessToken
 })
+	**/
 
 
-//map.addControl(mapDirections, 'top-left');   this is search bar on the top left of the screen 
+//map.addControl(mapDirections, 'top-left');   //this is search bar on the top left of the screen 
+
+
 
 
    //}, 100); closed  below
@@ -1833,14 +1846,6 @@ var map = new mapboxgl.Map({
 
 
 **/
-
-
-
-
-
-
-
-
 
 
 var clearAll = document.getElementById('clearAll');
