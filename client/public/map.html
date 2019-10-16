@@ -1765,7 +1765,8 @@ $.get('/api/searchs/', function(data,status) {
 
 
 		// get the last saved item from the database
-		// PROBLEM if an item has already been search this won't work!!
+		// PROBLEM if an item has already been search this won't work!! 
+		// this only works for newly searched items!
 	var dostuff = data.filter(item=>  { return item.saved===true}  )
 		console.log(dostuff)
 		x = dostuff[dostuff.length-1].longitude;

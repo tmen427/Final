@@ -71,8 +71,9 @@ class Search extends Component {
                               break; 
                                  
                                  }
+                       
                                  else {
-                                   console.log('Could not find this location');
+                                 console.log('Could not find this location');
                                  }
                                       
                                  
