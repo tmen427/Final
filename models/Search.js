@@ -26,7 +26,7 @@ var SearchSchema = new Schema({
   },
   saved: {
     type: Boolean,
-    default:true
+    default:false
   }
 });
 

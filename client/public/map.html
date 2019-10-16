@@ -1758,28 +1758,20 @@ $(document).ready(function(){
 
 
 
-//alright get the values from the database.......whatever the most recent value is get that
+
 var x; 
 var y; 
 $.get('/api/searchs/', function(data,status) {
-	// the logic is whatever is the latest value that has been saved get that
-
-for (var i=0; i<data.length; i++)  {	
 
 
-	if (data[i].saved === true ) {    //this gets you the frist oneee....
-		
-	
+		// get the last saved item from the database
+		// PROBLEM if an item has already been search this won't work!!
+	var dostuff = data.filter(item=>  { return item.saved===true}  )
+		console.log(dostuff)
+		x = dostuff[dostuff.length-1].longitude;
+	    y = dostuff[dostuff.length-1].latitude;
 
-			// this is WRONG.....u want the last one that's saved not the last
 
-			console.log(data[data.length-1].name)  //u have all the saved values now get the last one 
-			console.log(data[data.length-1].longitude)
-			console.log(data[data.length-1].latitude)
-			 x = data[data.length-1].longitude;
-			 y = data[data.length-1].latitude;
-	}
-	}			
 }
 )
 

@@ -52,17 +52,22 @@ class Search extends Component {
                                
                                  var search = res.data[i].name; 
                        
+                             //   var your_search = this.state.locationSearch;
+                             //  console.log(your_search + " " + search)
+
+
+                             //for some reason you get the correct value from here, but the maps page pulls something else
 
                                  // put the below longgitude and latitude in setstate if you want to retrieve it later in componentditmount
                                  if (search === this.state.locationSearch.trim()) {
                                      console.log(this.state.locationSearch)
-                               //      console.log("longitude "  + " " + res.data[i].longitude); 
-                                 //    console.log("latitude " + " " + res.data[i].latitude); 
+                                     console.log("yoyoyoyoyoyoyoy longitude "  + " " + res.data[i].longitude); 
+                                     console.log("latitude " + " " + res.data[i].latitude); 
                                    //  console.log(res.data[i]._id); 
                                   this.handleSaved(res.data[i]._id);   // now if algorithm works it will save into database!
                                  //console.log(this.state.venues[this.state.venues.length-1]) 
                                        // changing the state to true see below if to redirect the route
-            this.setState ({toLink:true});
+                this.setState ({toLink:true});
                               break; 
                                  
                                  }
