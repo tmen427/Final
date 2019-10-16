@@ -44,12 +44,9 @@ class Search extends Component {
         // When the form is submitted, prevent its default behavior, get update state
         event.preventDefault();
 
-        API.searchVenues(this.state.locationSearch).catch(err => console.log(err))
+        API.searchVenues(this.state.locationSearch).catch(err => console.log(err));
 
-       setTimeout(() =>
-            API.getLocationsSearch()
-                .then(res => {                 
-                    this.setState({ venues: res.data })
+       setTimeout(() => API.getLocationsSearch().then(res => {this.setState({ venues: res.data });
                             // this search algorithm is not quit right, but it is good enough for now!
                             for (var i = 0; i<res.data.length; i++) {
                                
@@ -79,7 +76,7 @@ class Search extends Component {
                        
                 })
                 .catch(err => console.log(err))
-           , 10);
+           , 500);
 
            
     
@@ -168,7 +165,6 @@ class Search extends Component {
                                             };
                                         })}
                                     </List>
-
                                 )}
                         </Col>
                                      comment this out for now       */}
