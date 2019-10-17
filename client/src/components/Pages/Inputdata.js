@@ -98,6 +98,7 @@ class Inputdata extends Component {
     };
 
     render() {
+        var x = this.state.locations.length; 
         return (
             <div>
                 <Nav />
@@ -107,7 +108,8 @@ class Inputdata extends Component {
                        
 
                         <Col size="md-12 sm-12">
-                            <h1>User Posts</h1>
+                            <h1>User Posts-
+        {this.state.locations.length>0 ? x : 0} And Counting!</h1>
                             {this.state.locations.length ? (
                                 <List >
                                     {this.state.locations.map(location => (
