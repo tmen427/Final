@@ -9,7 +9,7 @@ function Nav() {
       <header class="main-header dark-header fs-header sticky">
         <div class="header-inner">
         
-            <a href="/inputdata" class="add-list">Recent Posts<span><i class="fa fa-plus">+</i></span></a>
+            <a href="/inputdata" class="add-list">User Posts<span><i class="fa fa-plus">+</i></span></a>
             
             <a href="/login" class="show-reg-form modal-open"><i class="fa fa-sign-in" href="/login" ></i>Sign In</a>
             <div class="nav-button-wrap color-bg">
