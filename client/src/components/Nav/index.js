@@ -27,7 +27,7 @@ function Nav() {
 
                   </li>
                   <li>
-                    <a class="act-link" href="/saved">Previous Searches</a>
+                    <a class="act-link" href="/saved">Recent Searches</a>
                   </li>
 
                   <li>

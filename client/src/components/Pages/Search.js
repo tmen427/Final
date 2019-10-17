@@ -149,6 +149,9 @@ class Search extends Component {
                     </Row>
                     
                     <Row>
+                         {this.state.length==undefined}
+                         <h1>Nothing Found Yet...</h1>
+
                         {/*
                         <Col size="xs-12">
                             {!this.state.venues.length ? (

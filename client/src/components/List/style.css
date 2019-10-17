@@ -11,10 +11,12 @@
 }
 
 .list-overflow-container li {
-  border-radius: 0px;
+  border-radius: 0 px;
   border-left: none;
   border-right: none;
 }
+
+
 
 .list-overflow-container li * {
   cursor: pointer;
@@ -30,4 +32,15 @@
 
 .list-overflow-container li:last-child {
   border-bottom: none;
+}
+
+.list-group-item{
+  border-radius: 15px !important; 
+  margin: 10px; 
+  background-color: #23b6cd;
+  width: 860px; 
+}
+
+a {
+  color: black !important;
 }
