@@ -143,7 +143,7 @@ class Inputdata extends Component {
                         </Col>
 
                         <Col size="md-12 sm-12">
-                            <h1>Location Data List</h1>
+                            <h1>User Posts</h1>
                             {this.state.locations.length ? (
                                 <List >
                                     {this.state.locations.map(location => (
@@ -152,7 +152,7 @@ class Inputdata extends Component {
                                                 <DeleteBtn onClick={() => this.deleteLocation(location._id)} />
                                                 <h3 className="showMap"
                                                 onClick={() => this.handleShow(location.address, location.name, location.longitude, location.latitude)}
-                                                >{location.feature === "water" ? "Water" : location.feature === "bathroom" ? "Bathroom" : "Bicycle Rack"}</h3>
+                                                >Type: {location.feature === "water" ? "Water" : location.feature === "bathroom" ? "Bathroom" : "Bicycle Rack"}</h3>
                                                 <p>
                                                     <span>
                                                         <strong>{location.address}</strong> add by <strong>{location.name}</strong>
