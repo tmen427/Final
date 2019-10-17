@@ -15,7 +15,8 @@ class Search extends Component {
         venues: [],
         locationSearch: "",
         message:"", 
-        toLink: false
+        toLink: false,
+        showFound: false
     };
 
     componentDidMount() {
@@ -74,6 +75,7 @@ class Search extends Component {
                        
                                  else {
                                  console.log('Could not find this location');
+                                  this.setState({showFound: true})
                                  }
                                       
                                  
@@ -149,8 +151,10 @@ class Search extends Component {
                     </Row>
                     
                     <Row>
-                         {this.state.length==undefined}
-                         <h1>Nothing Found Yet...</h1>
+                   <h2>
+                   <b>{this.state.showFound? 'Cannot Find this Location...' : ''}</b> 
+                          </h2>
+                         
 
                         {/*
                         <Col size="xs-12">

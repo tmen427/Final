@@ -73,7 +73,7 @@ class Search extends Component {
                                                         key={venue._id}
                                                         name={venue.name}
                                                         address={venue.address}
-                                                
+                                                        category={venue.category}
                                                         longitude={venue.longitude}
                                                         latitude={venue.latitude}
                                                         onClick={() => this.deleteVenue(venue._id)}
