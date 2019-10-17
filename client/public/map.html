@@ -140,11 +140,12 @@
         }
 
         fieldset.scheduler-border {
-            border: 1px groove #ddd !important;
+          /*  border: 1px groove #ddd !important;  */
             padding: 0 1.4em 1.4em 1.4em !important;
             margin: 0 0 1.5em 0 !important;
             -webkit-box-shadow: 0px 0px 0px 0px #000;
-            box-shadow: 0px 0px 0px 0px #000;
+			box-shadow: 0px 0px 0px 0px #000;
+			
         }
 
         legend.scheduler-border {
@@ -152,7 +153,9 @@
             font-weight: bold !important;
             text-align: left !important;
             width: auto;
-            padding: 0 10px;
+			padding: 0 10px;
+			color: black;
+			background-color: #23b6cd;
            
         }
 
@@ -206,7 +209,8 @@
 p {
     font-size: 14px;
     line-height: 10px;
-    padding: 3px 5px;
+	padding: 3px 5px;
+
 	font-weight:500;
     color: rgb(0, 0, 0);
     font-weight:bolder;
@@ -1672,7 +1676,8 @@ header.main-header {
                 </div>
             </div>
             <!-- nav-button-wrap end-->
-            <!--  navigation --> 
+			<!--  navigation --> 
+			
             <div class="nav-holder main-menu">
                 <nav>
                     <ul>
@@ -1712,7 +1717,7 @@ header.main-header {
             <fieldset class="scheduler-border">
   
 	
-				<legend class="scheduler-border">Double Click to add Markers</legend>
+				<legend class="scheduler-border"><strong>Choose And Display Markers</strong></legend>
 			
  <div id='menu'>
 	 <!--	
@@ -1729,7 +1734,9 @@ header.main-header {
 		-->
  
 		</div>
+			
                 <p>
+				
                     <label><input type="radio" id="feature" name="feature" value="water" /> Water Fountain</label>
                     <label><input type="radio" id="feature" name="feature" value="bathroom" /> Bathroom</label>
                     <label><input type="radio" id="feature" name="feature" value="bicycle" /> Bicycle Rack</label>
@@ -1795,7 +1802,8 @@ map.doubleClickZoom.disable()
     accessToken: mapboxgl.accessToken,
     mapboxgl: mapboxgl
 }));
-map.addControl(new mapboxgl.FullscreenControl());	
+//this adds fullscreen mode(below)
+//map.addControl(new mapboxgl.FullscreenControl());	
 map.addControl(new mapboxgl.NavigationControl());
 /**
 var userLocation = new mapboxgl.GeolocateControl({
@@ -2029,7 +2037,7 @@ map.on('mousemove', function (e) {
 
 // Locate the user
 // Add geolocate control to the map.
-/**
+
 var userLocation = new mapboxgl.GeolocateControl({
 	positionOptions: {
 		enableHighAccuracy: true
@@ -2045,7 +2053,7 @@ userLocation.on('geolocate', function (e) {
 	mapDirections.setOrigin(position)
 
 });
-**/
+
 
 
 //Directions navigation
@@ -2276,8 +2284,15 @@ $("input[type='radio']").on('click', function () {
 //     console.log(selectedValue);
 });
 
+$("input[type='radio']").hover( function () {
+//  selectedValue = $("input[name=feature]:checked").val();
+$(this).css('cursor','pointer').attr('title', 'DOUBLE CLICK ON THE MAP TO ADD A MARKER.')
+});
 
-
+$('p').hover( function () {
+//  selectedValue = $("input[name=feature]:checked").val();
+$(this).css('cursor','pointer').attr('title', 'DOUBLE CLICK ON THE MAP TO ADD A MARKER.')
+});
 
 }, 100);  // this ends the settimeout. maybe not the best solution. is there an alternative?
 
