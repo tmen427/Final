@@ -13,3 +13,8 @@
 .showMap:hover{
     transform: scale(1.05)
 }
+
+input {
+    border-radius: 20px !important;
+    
+}
