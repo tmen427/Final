@@ -134,6 +134,7 @@ class Search extends Component {
                                                 onChange={this.handleInputChange}
                                                 placeholder="Search to find nearby bicycle racks, bathrooms and water fountains"
                                             />
+                                            
                                         </Col>
                                         <Col size="xs-3 sm-2">
                                             <Button
