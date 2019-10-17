@@ -132,7 +132,7 @@ class Search extends Component {
                                                 name="locationSearch"
                                                 value={this.state.locationSearch}
                                                 onChange={this.handleInputChange}
-                                                placeholder="Search to find nearby bicycle racks, bathrooms and water fountains"
+                                                placeholder="Find nearby bicycle racks, bathrooms and water fountains"
                                             />
                                             
                                         </Col>
