@@ -61,8 +61,8 @@ class Search extends Component {
                                      console.log(this.state.locationSearch)
                                      console.log("yoyoyoyoyoyoyoy longitude "  + " " + res.data[i].longitude); 
                                      console.log("latitude " + " " + res.data[i].latitude); 
-                                     alert(res.data[i].address);
-                                    alert(res.data[i].date);                                   //  console.log(res.data[i]._id); 
+                                   //  alert(res.data[i].address);
+                                   // alert(res.data[i].date);                                   //  console.log(res.data[i]._id); 
                                   this.handleSaved(res.data[i]._id);   // now if algorithm works it will save into database!
                                
                                        // changing the state to true see below if to redirect the route
