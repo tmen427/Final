@@ -129,7 +129,7 @@ class Inputdata extends Component {
                                                
                                                 </p>
                                                 
-                                                <p><span><strong>Longitude:</strong> {location.longitude}, <strong>Latitude:</strong> {location.latitude}</span></p>
+                                                <p><span><strong>Longitude:</strong> {location.longitude} and  <strong>Latitude:</strong> {location.latitude}</span></p>
                                                
                                      {location.message ? (<p><strong>Message: </strong>{location.message} </p>) : (<p> </p>) }  
                                             </div>
