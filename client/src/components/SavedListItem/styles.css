@@ -5,3 +5,15 @@
 .showMap:hover{
     transform: scale(1.1)
 }
+
+p {
+    margin: 0px !important; 
+    padding:0px !important; 
+}
+
+.list-group-item {
+    padding: 20px !important; 
+}
+h1 {
+    text-align: center;
+}

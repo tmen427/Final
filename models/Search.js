@@ -28,7 +28,9 @@ var SearchSchema = new Schema({
     type: Boolean,
     default:false
   },
-  date: { type: Date, default: Date.now }
+
+      
+  date: { type: Number, default: (new Date()).getTime() }
 });
 
 // This creates our model from the above schema, using mongoose's model method

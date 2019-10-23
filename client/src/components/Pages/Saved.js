@@ -61,6 +61,7 @@ class Search extends Component {
                 <Container>
                     <Row>
                         <Col size="xs-12">
+                            <h1>Recent Searches</h1>
                             {!this.state.venues.length ? (
                                 <h1 className="text-center">No Venue Display</h1>
                             ) : (
@@ -71,11 +72,13 @@ class Search extends Component {
                                                     <div>
                                                     < ListItem
                                                         key={venue._id}
+                                                        
                                                         name={venue.name}
                                                         address={venue.address}
                                                         category={venue.category}
                                                         longitude={venue.longitude}
                                                         latitude={venue.latitude}
+                                                        date={venue.date}
                                                         onClick={() => this.deleteVenue(venue._id)}
                                                         showMap={() => this.handleShow(venue.address, venue.name, venue.longitude, venue.latitude)}
                                                     />
