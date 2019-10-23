@@ -1,5 +1,5 @@
 var mongoose = require("mongoose");
-
+var moment = require('moment');
 // Save a reference to the Schema constructor
 var Schema = mongoose.Schema;
 
@@ -30,7 +30,7 @@ var SearchSchema = new Schema({
   },
 
       
-  date: { type: Number, default: (new Date()).getFullYear() }
+  date: { type: String, default: () => moment().format("dddd, MMMM Do YYYY")}
 });
 
 // This creates our model from the above schema, using mongoose's model method
