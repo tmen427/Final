@@ -118,11 +118,15 @@ class Inputdata extends Component {
                                                 <DeleteBtn onClick={() => this.deleteLocation(location._id)} />
                                                 <h3 className="showMap"
                                                 onClick={() => this.handleShow(location.address, location.name, location.longitude, location.latitude)}
-                                                >Type: {location.feature === "water" ? "Water" : location.feature === "bathroom" ? "Bathroom" : "Bicycle Rack"}</h3>
+                                                >Type: {location.feature === "water" ? "Water Fountain" : location.feature === "bathroom" ? "Bathroom" : "Bicycle Rack"}</h3>
                                                 <p>
                                                     <span>
-                                                        <strong>{location.address}</strong> added by <strong>{location.name}</strong>
+                                                        <strong>Address:</strong>  {location.address}
+                                                        {location.name==='Anonymous Person' ? (<p> <b>Posted </b>by an {location.name}</p> ) : (<p> <b>Posted</b> by {location.name}</p>) }
+                                                       
                                                     </span>
+                                               
+                                               
                                                 </p>
                                                 
                                                 <p><span><strong>Longitude:</strong> {location.longitude}, <strong>Latitude:</strong> {location.latitude}</span></p>
