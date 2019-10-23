@@ -30,7 +30,7 @@ var SearchSchema = new Schema({
   },
 
       
-  date: { type: String, default: () => moment().format("dddd, MMMM Do YYYY, h:mm:ss a")}
+  date: { type: String, default: () => moment().format("dddd, MMMM Do YYYY, h:mm:ss a", "America/Chicago" )}
 });
 
 // This creates our model from the above schema, using mongoose's model method
