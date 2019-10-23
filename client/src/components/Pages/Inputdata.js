@@ -107,9 +107,9 @@ class Inputdata extends Component {
                     <Row>
                        
 
-                        <Col size="md-12 sm-12">
-                            <h1>User Posts-
-        {this.state.locations.length>0 ? x : 0} And Counting!</h1>
+                        <Col size="xs-12">
+                            <h2>User Posts-
+        {this.state.locations.length>0 ? x : 0} And Counting!</h2>
                             {this.state.locations.length ? (
                                 <List >
                                     {this.state.locations.map(location => (
@@ -121,11 +121,12 @@ class Inputdata extends Component {
                                                 >Type: {location.feature === "water" ? "Water" : location.feature === "bathroom" ? "Bathroom" : "Bicycle Rack"}</h3>
                                                 <p>
                                                     <span>
-                                                        <strong>{location.address}</strong> add by <strong>{location.name}</strong>
+                                                        <strong>{location.address}</strong> added by <strong>{location.name}</strong>
                                                     </span>
                                                 </p>
                                                 <p><span><strong>Longitude:</strong> {location.longitude}, <strong>Latitude:</strong> {location.latitude}</span></p>
                                                 <p><strong>Message:</strong> {location.message}</p>
+                                     {location.message ? (<p>nothing hear</p>) : (<p> </p>) }  
                                             </div>
                                         </ListItem>
 

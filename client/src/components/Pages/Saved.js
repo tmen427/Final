@@ -61,7 +61,7 @@ class Search extends Component {
                 <Container>
                     <Row>
                         <Col size="xs-12">
-                            <h1>Recent Searches</h1>
+                            <h2>Recent Searches</h2>
                             {!this.state.venues.length ? (
                                 <h1 className="text-center">No Venue Display</h1>
                             ) : (
