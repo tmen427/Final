@@ -5,9 +5,9 @@
 
 
 .jumbotron {
-  min-height: 400px;
+  min-height: 500px;
   padding-top: 100px;
- background-image: url("./img/building.jpeg"); 
+ background-image: url("./img/bust.jpeg"); 
 background-repeat: no-repeat;
 background-size: cover; 
 position: relative;
