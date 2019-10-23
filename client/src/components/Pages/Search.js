@@ -48,19 +48,16 @@ class Search extends Component {
         API.searchVenues(this.state.locationSearch).catch(err => console.log(err));
 
        setTimeout(() => API.getLocationsSearch().then(res => {this.setState({ venues: res.data });
-                            // this search algorithm is not quit right, but it is good enough for now!
+                         
+                             // console.log(this.state.venues)
+                         
                             for (var i = 0; i<res.data.length; i++) {
-                               
+                                   //console.log(res.data[i].saved)
                                  var search = res.data[i].name; 
-                       
-                             //   var your_search = this.state.locationSearch;
-                             //  console.log(your_search + " " + search)
-
-
-                             //for some reason you get the correct value from here, but the maps page pulls something else
-
                                  // put the below longgitude and latitude in setstate if you want to retrieve it later in componentditmount
-                                 if (search === this.state.locationSearch.trim()) {
+                                 if (search === this.state.locationSearch.trim() && res.data[i].saved === false) 
+                                    // if the location is not saved (not in the database then do this..., alows same locations to be saved
+                                 {
                                      console.log(this.state.locationSearch)
                                      console.log("yoyoyoyoyoyoyoy longitude "  + " " + res.data[i].longitude); 
                                      console.log("latitude " + " " + res.data[i].latitude); 
@@ -68,11 +65,11 @@ class Search extends Component {
                                   this.handleSaved(res.data[i]._id);   // now if algorithm works it will save into database!
                                  //console.log(this.state.venues[this.state.venues.length-1]) 
                                        // changing the state to true see below if to redirect the route
-                this.setState ({toLink:true});
+                                 this.setState ({toLink:true});
                               break; 
                                  
                                  }
-                       
+                                 
                                  else {
                                  console.log('Could not find this location');
                                   this.setState({showFound: true})
