@@ -172,7 +172,7 @@ class Inputdata extends Component {
                                     disabled={!(this.state.name && this.state.locationSearch)}
                                     onClick={this.handleFormSubmit}
                                 >
-                                    Submit
+                                    Post
                                 </FormBtn>
 
                             </form>
