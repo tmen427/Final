@@ -54,8 +54,8 @@ class Search extends Component {
                             for (var i = 0; i<res.data.length; i++) {
                                    //console.log(res.data[i].saved)
                                  var search = res.data[i].name; 
-                                alert(res.data[i].address.includes("United States"))
-                                 if (search === this.state.locationSearch.trim() && res.data[i].saved === false && res.data[i].address.includes("United States")=== true) 
+                                // alert(res.data[i].address.includes("United States"))
+                                 if (search === this.state.locationSearch.trim() && res.data[i].saved === false && res.data[i].address.includes("United States")=== true ) 
                                     // if the location is not saved (not in the database then do this..., alows same locations to be saved
                                  {
                                      console.log(this.state.locationSearch)
@@ -69,7 +69,27 @@ class Search extends Component {
                               break; 
                                  
                                  }
+
+                                 else if (search === this.state.locationSearch.trim() && res.data[i].saved === false && res.data[i].address.includes("United States")=== false )  {
+                                     
+                                    // if the location is not saved (not in the database then do this..., alows same locations to be saved
                                  
+                                   
+                               
+                                  this.handleSaved(res.data[i]._id);   // now if algorithm works it will save into database!
+                               
+                                     
+                                 this.setState ({toLink:true});
+                              break; 
+
+
+
+
+
+
+                                 }
+
+
                                  else {
                                  console.log('Could not find this location');
                                   this.setState({showFound: true})
