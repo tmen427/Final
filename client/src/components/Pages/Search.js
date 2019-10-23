@@ -56,8 +56,14 @@ class Search extends Component {
                                  var search = res.data[i].name; 
                                 // alert(res.data[i].address.includes("United States"))
                                  if (search === this.state.locationSearch.trim() && res.data[i].saved === false && res.data[i].address.includes("United States")=== true) 
-                                    // if the location is not saved (not in the database then do this..., alows same locations to be saved
+                                         
+                                 // if the location is not saved (not in the database then do this..., alows same locations to be saved
                                  {
+
+if (res.data[i].address.includes("United States")===true) {
+                                             alert('ok');
+                                         }
+
                                      console.log(this.state.locationSearch)
                                      console.log("yoyoyoyoyoyoyoy longitude "  + " " + res.data[i].longitude); 
                                      console.log("latitude " + " " + res.data[i].latitude); 
@@ -68,9 +74,10 @@ class Search extends Component {
                                        // changing the state to true see below if to redirect the route
                                  this.setState ({toLink:true});
                               break; 
-                                 
-                                 }
-/** 
+                               
+          
+                                }
+                                 /**
                                  else if (search === this.state.locationSearch.trim() && res.data[i].saved === false && res.data[i].address.includes("United States")=== false )  {
                                  this.handleSaved(res.data[i]._id);   // now if algorithm works it will save into database!
                                  this.setState ({toLink:true});
