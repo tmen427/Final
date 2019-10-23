@@ -124,9 +124,10 @@ class Inputdata extends Component {
                                                         <strong>{location.address}</strong> added by <strong>{location.name}</strong>
                                                     </span>
                                                 </p>
+                                                
                                                 <p><span><strong>Longitude:</strong> {location.longitude}, <strong>Latitude:</strong> {location.latitude}</span></p>
-                                                <p><strong>Message:</strong> {location.message}</p>
-                                     {location.message ? (<p>nothing hear</p>) : (<p> </p>) }  
+                                               
+                                     {location.message ? (<p><strong>Message: </strong>{location.message} </p>) : (<p> </p>) }  
                                             </div>
                                         </ListItem>
 
