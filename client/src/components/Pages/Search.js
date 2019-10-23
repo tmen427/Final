@@ -61,7 +61,7 @@ class Search extends Component {
                                  {
 
 if (res.data[i].address.includes("United States")===true) {
-                                             alert('ok');
+                                         //    alert('ok');
                                          }
 
                                      console.log(this.state.locationSearch)
