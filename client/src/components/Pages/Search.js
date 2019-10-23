@@ -70,12 +70,13 @@ class Search extends Component {
                               break; 
                                  
                                  }
-
+/** 
                                  else if (search === this.state.locationSearch.trim() && res.data[i].saved === false && res.data[i].address.includes("United States")=== false )  {
                                  this.handleSaved(res.data[i]._id);   // now if algorithm works it will save into database!
                                  this.setState ({toLink:true});
                                  break; 
                                 }
+                                **/
                                  else {
                                  console.log('Could not find this location');
                                   this.setState({showFound: true})
