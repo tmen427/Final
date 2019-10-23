@@ -26,7 +26,7 @@ export function ListItem({
       <Container>
         <Row>
         <Col size="xs-12 sm-11">
-            <h3 className="showMap" onClick={showMap}><b>{name}</b></h3>
+            <h3 className="showMap" onClick={showMap}><b>{name}/1000000</b></h3>
             <p><strong>Searched On:</strong> {date}</p>
             <p><strong>Address: </strong> {address}</p>
            

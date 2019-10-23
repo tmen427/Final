@@ -11,7 +11,7 @@ function Nav() {
         
             <a href="/inputdata" class="add-list">User Posts<span><i class="fa fa-plus">+</i></span></a>
             
-            <a href="/login" class="show-reg-form modal-open"><i class="fa fa-sign-in" href="/login" ></i>Sign In</a>
+            <a href="/login" class="show-reg-form modal-open"><b class="fa fa-sign-in" href="/login" >Sign In</b></a>
             <div class="nav-button-wrap color-bg">
               <div class="nav-button">
                 <span></span><span></span><span></span>
