@@ -26,13 +26,13 @@ export function ListItem({
       <Container>
         <Row>
         <Col size="xs-12 sm-11">
-            <h3 className="showMap" onClick={showMap}>{name}</h3>
-            <p>Date: {date}</p>
+            <h3 className="showMap" onClick={showMap}><b>{name}</b></h3>
+            <p><strong>Searched On:</strong> {date}</p>
             <p><strong>Address: </strong> {address}</p>
            
             <p><strong>Longitude: </strong>{longitude}, <strong>Latitude: </strong>{latitude}</p>
             <a rel="noreferrer noopener" target="_blank" href={`http://en.wikipedia.org/w/index.php?title=Special:Search&search=${name}`}>
-              Check wikipedia Page
+            <i>Check wikipedia Page </i>
             </a>
             <button className="btn btn-lg btn-warning savedButton ml-5 float-right" type="button" onClick={onClick}>Delete</button>
           </Col>
