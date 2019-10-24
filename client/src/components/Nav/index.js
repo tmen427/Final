@@ -9,14 +9,10 @@ function Nav() {
       <header class="main-header dark-header fs-header sticky">
         <div class="header-inner">
         
-            <a href="/inputdata" class="add-list">User Posts<span><i class="fa fa-plus">+</i></span></a>
+           
             
-            <a href="/login" class="show-reg-form modal-open"><b class="fa fa-sign-in" href="/login" >Sign In</b></a>
-            <div class="nav-button-wrap color-bg">
-              <div class="nav-button">
-                <span></span><span></span><span></span>
-              </div>
-            </div>
+            <a href="/login" class="add-list"><b class="fa fa-sign-in" href="/login" >Sign In</b></a>
+          
 
             <div class="nav-holder main-menu">
               <nav>
@@ -34,6 +30,8 @@ function Nav() {
                     <a href="map.html">Map</a>
 
                   </li>
+
+                  <li> <a href="/inputdata" >User Posts </a></li>
 
                 </ul>
               </nav>
