@@ -139,13 +139,13 @@ if (res.data[i].address.includes("United States")===true) {
                                 <Container>
                                     <Row>
                                         <Col size="xs-9 sm-10">
-                                            <Input
+                                            <Input 
                                                 name="locationSearch"
                                                 value={this.state.locationSearch}
                                                 onChange={this.handleInputChange}
                                                 placeholder="Find nearby bicycle racks, bathrooms and water fountains"
                                             />
-                                            
+        
                                         </Col>
                                         <Col size="xs-3 sm-2">
                                             <Button
@@ -153,7 +153,7 @@ if (res.data[i].address.includes("United States")===true) {
                                                 type="success"
                                                 className="input-lg"
                                             >
-                                                Go
+                                                Search
                                             </Button>
                                         </Col>
                                     </Row>
