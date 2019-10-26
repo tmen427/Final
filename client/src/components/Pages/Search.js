@@ -131,8 +131,9 @@ if (res.data[i].address.includes("United States")===true) {
         return (
             <div>
                 <Nav />
-                <Jumbotron />
+    
                 <Container>
+                    <div class = 'do'>
                     <Row>
                         <Col size="md-12">
                             <form>
@@ -157,11 +158,13 @@ if (res.data[i].address.includes("United States")===true) {
                                             </Button>
                                         </Col>
                                     </Row>
+                                
                                 </Container>
                             </form>
                         </Col>
+                
                     </Row>
-                    
+                           </div>
                     <Row>
                    <h2>
                    <b>{this.state.showFound? 'Cannot Find this Location...' : ''}</b> 
