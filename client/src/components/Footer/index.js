@@ -7,7 +7,7 @@ function Footer(){
         
         <footer>
             <div className="copyright">copyright &copy; 2019 Mapa</div>
-          
+  
         </footer>
         </div>
     )

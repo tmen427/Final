@@ -45,3 +45,6 @@ body {
     background-color: lightgray !important; 
 }
 
+.form-control {
+    border-color: lightgray !important; 
+}

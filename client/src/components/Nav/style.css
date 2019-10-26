@@ -1562,8 +1562,8 @@ header.main-header {
 }
 }
 .btn-success{
-	background-color: #23b6cd;
-	border-color: #088a9f;
+	background-color:blue;
+	border-color:blue;
 
 }
 .btn-success.disabled, .btn-success:disabled{
