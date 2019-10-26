@@ -300,7 +300,7 @@ ul {
    }
 
 .dark-header {
-	background: #23b6cd; 
+	background: white; 
 }
 .fs-header {
 	padding:0px 50px;
@@ -322,19 +322,19 @@ ul {
 	top:20px;
 	border-radius:30px;
 	color:black;
-	font-weight:600;
+	font-weight:400;
 
 	font-size:15px;
 }
 .add-list span {
 	padding-left:4px;
-	font-weight:700;
+	font-weight:400;
 }
 .dark-header .add-list {
-	box-shadow:0px 0px 0px 7px#0aa4bb;
+	box-shadow:0px 0px 0px 6px black;
 }
 .dark-header .add-list:hover {
-	box-shadow:0px 0px 0px 7px #088a9f;
+	box-shadow:0px 0px 0px 6px black;
 }
 .show-reg-form {
 	float:right;
@@ -612,7 +612,7 @@ ul {
 	padding: 10px;
     font-size: 15px;
 
-    font-weight: 600;
+    font-weight: 400;
     text-transform: none;
     line-height: 25px;
     letter-spacing: 0px;

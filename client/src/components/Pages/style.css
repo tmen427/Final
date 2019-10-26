@@ -26,7 +26,7 @@ button {
 
 
 .col-md-12 {
-   background-color: white !important; 
+   background-color:lightgrey !important; 
     margin-top: 350px !important; 
 
 }
@@ -42,6 +42,6 @@ div {
 }
 
 body {
-    background-color: white !important; 
+    background-color: lightgray !important; 
 }
 
