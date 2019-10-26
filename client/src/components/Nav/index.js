@@ -11,7 +11,7 @@ function Nav() {
         
            
             
-            <a href="/login" class="add-list"><b class="fa fa-sign-in" href="/login" >Sign In</b></a>
+            <a href="/login" class="add-list">Sign In</a>
           
 
             <div class="nav-holder main-menu">
@@ -32,6 +32,8 @@ function Nav() {
                   </li>
 
                   <li> <a href="/inputdata" >User Posts </a></li>
+
+                 
 
                 </ul>
               </nav>
