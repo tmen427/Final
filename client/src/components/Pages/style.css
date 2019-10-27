@@ -43,8 +43,12 @@ div {
 
 body {
     background-color: lightgray !important; 
+    z-index: 5px;
 }
 
 .form-control {
     border-color: lightgray !important; 
 }
+
+
+
