@@ -120,6 +120,7 @@ this.setState({password:""});
           >
             Submit
           </Button>
+          <p className="mt-1">Click <a href="/"> HERE </a> to return home</p>
         </form>
       </div>
       </div>

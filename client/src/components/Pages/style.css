@@ -26,7 +26,7 @@ button {
 
 
 .col-md-12 {
-   background-color:lightgrey !important; 
+background-color: lightgrey;
     margin-top: 350px !important; 
 
 }
@@ -42,13 +42,17 @@ div {
 }
 
 body {
-    background-color: lightgray !important; 
+    background-color: lightgrey !important; 
+  
     z-index: 5px;
 }
 
 .form-control {
-    border-color: lightgray !important; 
+    border-color: lightgrey !important; 
 }
 
 
 
+.do {
+    
+}
