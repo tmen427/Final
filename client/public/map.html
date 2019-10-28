@@ -42,7 +42,7 @@
 	font-size: 13px;
 	height:100%;
 	background:rgb(198, 233, 255);
-	color: #23b6cd;
+	color: white;
 	font-family: 'Quicksand', sans-serif;
             
 
@@ -88,7 +88,7 @@
             color: #222;
             background: #fff;
             margin-right: 0px;
-            background-color: #23b6cd!important;
+            background-color: white!important;
 
         }
 
@@ -125,14 +125,14 @@
 
         .featurediv {
             position: absolute;
-            right: 0;
-            bottom: 0;
+			margin-top: 10px; 
+      
             height: 102px;
-            margin-bottom: 80px;
+
             clear: both;
             overflow: hidden;
             border-radius: 4px;
-            color: #23b6cd;
+            color: white;
             background-color: transparent;
 
 
@@ -155,7 +155,7 @@
             width: auto;
 			padding: 0 10px;
 			color: black;
-			background-color: #23b6cd;
+			background-color: white;
            
         }
 
@@ -163,7 +163,7 @@
             text-align: center;
             color: white;
             position: fixed;
-            background-color: #23b6cd;
+            background-color: white;
             vertical-align: center;
             bottom: 0px;
             width: 100%;
@@ -192,10 +192,10 @@
             margin-bottom: 2px;
         }
         .btn{
-	background-color: #23b6cd
+	background-color: white
 } 
 .bg-light{
-    background-color: #23b6cd !important;
+    background-color: white!important;
 }
     
 
@@ -214,7 +214,7 @@ p {
 	font-weight:500;
     color: rgb(0, 0, 0);
     font-weight:bolder;
-	background-color: #23b6cd;
+	background-color: white;
 	z-index: 10;
 
 }
@@ -225,8 +225,10 @@ p {
 	font-weight:500;
     color: rgb(0, 0, 0);
     font-weight:bolder;
-    background-color: #23b6cd;
-    border-radius: 1px;
+    background-color: white;
+	border-radius: 1px;
+	position: fixed;
+
 }
 blockquote {
 	float:left;
@@ -404,7 +406,7 @@ blockquote p {
 	box-shadow: 0px 0px 0px 7px rgba(0,0,0,0.2);
 }
 .dark-header {
-	background:#23b6cd;
+	background:white;
 }
 .fs-header {
 	padding:0px 50px;
@@ -421,24 +423,24 @@ blockquote p {
 }
 .add-list {
 	float:right;
-	padding: 13px 32px;
+	padding: 9px 32px;
 	position:relative;
 	top:20px;
 	border-radius:30px;
-	color:black;
-	font-weight:700;
-	text-transform:uppercase;
-	font-size:11px;
+	color:black ;
+	font-weight:450;
+
+	font-size:15px;
 }
 .add-list span {
 	padding-left:4px;
 	font-weight:700;
 }
 .dark-header .add-list {
-	box-shadow:0px 0px 0px 7px#0aa4bb;
+	box-shadow:0px 0px 0px 6px black;
 }
 .dark-header .add-list:hover {
-	box-shadow:0px 0px 0px 7px #088a9f;
+	box-shadow:0px 0px 0px 6px black;
 }
 .show-reg-form {
 	float:right;
@@ -714,9 +716,9 @@ blockquote p {
 .nav-holder nav li a {
 	float: left;
 	padding: 10px;
-    font-size: 13px;
+    font-size: 15px;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 500;
     text-transform: none;
     line-height: 25px;
     letter-spacing: 0px;
@@ -1521,7 +1523,7 @@ section.list-single-section {
 .add-list {
     padding: 8px 16px;
     top: 26px;
-	font-size:10px;
+	font-size:15px;
 }
 .fs-header {
     padding: 0px 20px;
@@ -1669,7 +1671,7 @@ header.main-header {
             
             </div>
           
-			<a href="/login" class="add-list">Sign In <i ></i></a>
+			<a href="/login" class="add-list">Sign In </a>
             <!-- nav-button-wrap--> 
             <div class="nav-button-wrap color-bg">
                 <div class="nav-button">
@@ -1721,22 +1723,9 @@ header.main-header {
 	
 		<!--		<legend class="scheduler-border"><strong>Choose And Display Markers</strong></legend>    -->
 			
- <div id='menu'>
-	 <!--	
-		<input id='streets-v11' type='radio' name='rtoggle' value='streets' checked='checked'>
-		<label for='streets'>Street</label>
-		<input id='satellite-v9' type='radio' name='rtoggle' value='satellite'>
-		<label for='satellite'>Satellite</label>
- -->
-		<!--
-		<input id='light-v10' type='radio' name='rtoggle' value='light'>
-<label for='light'>Light View</label>
-<input id='dark-v10' type='radio' name='rtoggle' value='dark'>
-<label for='dark'>Dark View</label>
-		-->
- 
-		</div>
-				<p style=" padding: 9px;" >  Choose Marker</p>
+ <div id='menu'> 
+	
+				<p style=" padding: 9px;" >  Choose A Marker</p>
                 <p>
 				
                     <label><input type="radio" id="feature" name="feature" value="water" /> Water Fountain</label>
@@ -1747,12 +1736,10 @@ header.main-header {
 
                 </p>
 	
-
+</div>
             </fieldset>
 		</form>
-	
-
-    </div>
+	 </div>
    
 <!--
 	<footer>
@@ -1903,6 +1890,11 @@ var bicycleName = [];
 var waterAddress = [];
 var bathroomAddress = [];
 var bicycleAddress = [];
+
+
+
+//whatever the url of the page is...search that via another get request?
+
 $.getJSON("/api/locations", function (data) {
 	 console.log(data)
 

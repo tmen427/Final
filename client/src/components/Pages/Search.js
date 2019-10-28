@@ -124,9 +124,12 @@ if (res.data[i].address.includes("United States")===true) {
 
     render() {
         if (this.state.toLink === true) {
-        var x = this.state.locationSearch; 
-            return <Redirect to='/x' />          /* 'x can be anything, will go to map.html page' */
-          }
+      //  var x = this.state.locationSearch; 
+ 
+            return <Redirect to= "map.html"/>          /* 'x can be anything, will go to map.html page' */
+         
+        //   return  <Redirect to={'${this.state.locationSearch}'} />
+        }
 
         return (
             <div>

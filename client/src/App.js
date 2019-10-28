@@ -7,6 +7,9 @@ import Login from "./components/Login";
 import Signup from "./components/SignUp";
 import Footer from "./components/Footer";
 import Nav from "./components/Nav";
+import { Redirect } from 'react-router-dom';
+
+
 
 function App() {
   return (
@@ -24,7 +27,18 @@ function App() {
        
 
             {/*all routes will be redirection to the map... */}
-          <Route  path="/:id" render={() => {window.location.href="map.html"}} />
+  {/* <Route  path="/:id" render={() => {window.location.href="map.html"}} /> */} 
+
+    <Route  path="/yo" render={() => {window.location.href="yo.html"}} /> 
+    
+  
+      <Route exact path="/:id" render={ (props) => (
+                 <Redirect to={window.location.href = `map.html`} />
+  
+          )}
+      />
+    
+
         </Switch>
         <Footer />
       </div>
