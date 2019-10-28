@@ -125,8 +125,7 @@
 
         .featurediv {
             position: absolute;
-			margin-top: 10px; 
-      
+            margin-top: 10px; 
             height: 102px;
 
             clear: both;
@@ -228,7 +227,7 @@ p {
     background-color: white;
 	border-radius: 1px;
 	position: fixed;
-
+	
 }
 blockquote {
 	float:left;
@@ -1723,9 +1722,22 @@ header.main-header {
 	
 		<!--		<legend class="scheduler-border"><strong>Choose And Display Markers</strong></legend>    -->
 			
- <div id='menu'> 
-	
-				<p style=" padding: 9px;" >  Choose A Marker</p>
+ <div id='menu'>
+	 <!--	
+		<input id='streets-v11' type='radio' name='rtoggle' value='streets' checked='checked'>
+		<label for='streets'>Street</label>
+		<input id='satellite-v9' type='radio' name='rtoggle' value='satellite'>
+		<label for='satellite'>Satellite</label>
+ -->
+		<!--
+		<input id='light-v10' type='radio' name='rtoggle' value='light'>
+<label for='light'>Light View</label>
+<input id='dark-v10' type='radio' name='rtoggle' value='dark'>
+<label for='dark'>Dark View</label>
+		-->
+ </div>
+			
+            <p style=" padding: 9px;" >  Choose A Marker</p>
                 <p>
 				
                     <label><input type="radio" id="feature" name="feature" value="water" /> Water Fountain</label>
@@ -1736,10 +1748,12 @@ header.main-header {
 
                 </p>
 	
-</div>
+
             </fieldset>
 		</form>
-	 </div>
+	
+
+    </div>
    
 <!--
 	<footer>
