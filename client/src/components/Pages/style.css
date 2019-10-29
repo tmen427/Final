@@ -23,7 +23,7 @@ Button {
    border-radius: 15px !important; 
    background-color: blue !important; 
    height: 50px !important; 
-   margin-top: 350px !important; 
+   margin-top: 50px !important; 
     
        position: relative !important;
 
@@ -38,10 +38,11 @@ Input {
     margin: 0px !important; 
     padding: 10px !important; 
 
-    margin-top: 350px !important; 
+    margin-top: 50px !important; 
     width: 700px !important; 
     left: 150px !important; 
     display: flex !important; 
+
 
 }
 
@@ -77,3 +78,10 @@ body {
 
 
 
+
+.intro1 {
+    font-size: 50px !important;
+    margin-top: 200px; 
+    position: relative ;
+ 
+}

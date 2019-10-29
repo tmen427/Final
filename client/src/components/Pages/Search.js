@@ -135,24 +135,25 @@ if (res.data[i].address.includes("United States")===true) {
             <div class='okay'>
                 <Nav />
     
-                <Container>
+                <Container>             
                     <div class = 'do'>
+       
                     <Row>
 
       
              <div class='container'></div>
-
+                    
 
                             <form class = 'form-search form-inline'>
-                         
+                    <div class='intro1'><strong>Find nearby bathrooms, water fountains and bicycle racks </strong> </div>             
                                     <Row>
    
-
+ 
                                             <Input class='Search term'
                                                 name="locationSearch"
                                                 value={this.state.locationSearch}
                                                 onChange={this.handleInputChange}
-                                                placeholder="Find nearby bicycle racks, bathrooms and water fountains"
+                                                placeholder="Search by Address, City or State"
                                             />
  
                   
