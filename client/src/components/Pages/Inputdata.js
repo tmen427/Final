@@ -146,6 +146,7 @@ class Inputdata extends Component {
                                 )}
                         </Col>
 
+               {/*
                         <Col size="md-12">
                             <h3>Add a Location Manually</h3>
                             <form>
@@ -184,6 +185,7 @@ class Inputdata extends Component {
 
                             </form>
                         </Col>
+               */} 
                     </Row>
 
 
@@ -225,7 +227,7 @@ class Inputdata extends Component {
                                 </Layer>
                             </Map>
                             
-
+  
                         </Modal.Body>
                         <Modal.Footer>
                             <Button variant="secondary" onClick={this.handleClose}>
@@ -234,7 +236,7 @@ class Inputdata extends Component {
 
                         </Modal.Footer>
                     </Modal>
-
+                   
                 </Container>
             </div>
         );
