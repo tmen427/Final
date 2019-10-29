@@ -1776,17 +1776,30 @@ $(document).ready(function(){
 
 var x; 
 var y; 
+var z; 
 $.get('/api/searchs/', function(data,status) {
 
 
 		// get the last saved item from the database
 		// PROBLEM if an item has already been search this won't work!! 
 		// this only works for newly searched items!
-	var dostuff = data.filter(item=>  { return item.saved===true}  )
+	var dostuff = data.filter(item=>  { return item.saved===true}  );
 		console.log('the saved locations: ')
+
 		console.log(dostuff)
+		
 		x = dostuff[dostuff.length-1].longitude;
 	    y = dostuff[dostuff.length-1].latitude;
+		 z = 13; 
+		 
+		 var changezoom = dostuff[dostuff.length-1].address.split(" ").length; 
+		 //cut this into words and if word length is 2 it is a state
+		// alert(changezoom===3);
+		// alert(dostuff[dostuff.length-1].address.split(" ").length); 
+		// alert(dostuff[dostuff.length-1].address.split(" "))
+			if (changezoom===3) {
+				z = 5; 
+			}
 
 
 }
@@ -1799,7 +1812,7 @@ var map = new mapboxgl.Map({
 	container: 'map',
 	style: 'mapbox://styles/mapbox/streets-v11',
 	center: [x, y],
-	zoom: 13,
+	zoom: z,
     // zoom of 5 is good for states
 });
 map.doubleClickZoom.disable()
