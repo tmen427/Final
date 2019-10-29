@@ -34,7 +34,7 @@ export function ListItem({
             <a rel="noreferrer noopener" target="_blank" href={`http://en.wikipedia.org/w/index.php?title=Special:Search&search=${name}`}>
             <i>Check wikipedia Page </i>
             </a>
-            <button className="btn btn-lg btn-warning savedButton ml-5 float-right" type="button" onClick={onClick}>Delete</button>
+         {/*  <button className="btn btn-lg btn-warning savedButton ml-5 float-right" type="button" onClick={onClick}>Delete</button>  */}
           </Col>
         </Row>
       </Container>

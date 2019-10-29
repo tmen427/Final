@@ -79,7 +79,7 @@ class Search extends Component {
                                                         longitude={venue.longitude}
                                                         latitude={venue.latitude}
                                                         date={venue.date}
-                                                        onClick={() => this.deleteVenue(venue._id)}
+                                                      onClick={() => this.deleteVenue(venue._id)}   
                                                         showMap={() => this.handleShow(venue.address, venue.name, venue.longitude, venue.latitude)}
                                                     />
                                                     {/* <button type="button" className="btn btn-success">Map</button> */}
@@ -138,7 +138,7 @@ class Search extends Component {
                         </Modal.Body>
                         <Modal.Footer>
                             <Button variant="secondary" onClick={this.handleClose}>
-                                Close
+                                Closed
                                 </Button>
 
                         </Modal.Footer>

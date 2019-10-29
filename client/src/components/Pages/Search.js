@@ -132,39 +132,44 @@ if (res.data[i].address.includes("United States")===true) {
         }
 
         return (
-            <div>
+            <div class='okay'>
                 <Nav />
     
                 <Container>
                     <div class = 'do'>
                     <Row>
-                        <Col size="md-12">
-                            <form>
-                                <Container>
+
+      
+             <div class='container'></div>
+
+
+                            <form class = 'form-search form-inline'>
+                         
                                     <Row>
-                                        <Col size="xs-9 sm-10">
-                                            <Input 
+   
+
+                                            <Input class='Search term'
                                                 name="locationSearch"
                                                 value={this.state.locationSearch}
                                                 onChange={this.handleInputChange}
                                                 placeholder="Find nearby bicycle racks, bathrooms and water fountains"
                                             />
-        
-                                        </Col>
-                                        <Col size="xs-3 sm-2">
-                                            <Button
+ 
+                  
+                       
+                                            <Button class='here'
                                                 onClick={ this.handleFormSubmit }
                                                 type="success"
                                                 className="input-lg"
                                             >
-                                                Search
+                                             Search
                                             </Button>
-                                        </Col>
+                          
                                     </Row>
+                
                                 
-                                </Container>
                             </form>
-                        </Col>
+
                 
                     </Row>
                            </div>
