@@ -1792,12 +1792,12 @@ $.get('/api/searchs/', function(data,status) {
 	    y = dostuff[dostuff.length-1].latitude;
 		 z = 13; 
 		 
-		 var changezoom = dostuff[dostuff.length-1].address.split(" ").length; 
+		 var changezoom = dostuff[dostuff.length-1].address.split(",").length; 
 		 //cut this into words and if word length is 2 it is a state
-		// alert(changezoom===3);
-		// alert(dostuff[dostuff.length-1].address.split(" ").length); 
-		// alert(dostuff[dostuff.length-1].address.split(" "))
-			if (changezoom===3) {
+		// alert(changezoom===2);
+		// alert(dostuff[dostuff.length-1].address.split(",").length); 
+		// alert(dostuff[dostuff.length-1].address.split(","))
+			if (changezoom===2) {
 				z = 5; 
 			}
 
