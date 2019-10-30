@@ -95,7 +95,7 @@ if (res.data[i].address.includes("United States")===true) {
                        
                 })
                 .catch(err => console.log(err))
-           , 500);
+           , 400);
 
            
     
