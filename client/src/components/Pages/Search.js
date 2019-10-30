@@ -149,7 +149,7 @@ if (res.data[i].address.includes("United States")===true) {
                                     <Row>
    
  
-                                            <Input class='Search term'
+                                            <Input class='Searchterm'
                                                 name="locationSearch"
                                                 value={this.state.locationSearch}
                                                 onChange={this.handleInputChange}

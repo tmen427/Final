@@ -13,32 +13,68 @@
 .showMap:hover{
     transform: scale(1.05)
 }
-
-input {
-    border-radius: 15px !important;
-    
+Input {
+    max-width: 300px !important;
 }
+
+.Searchterm {
+    border-radius: 15px !important;
+    max-width: 700px !important;
+    margin-top: 50px; 
+    margin: 0px 10px !important;
+    min-width: 500px !important;
+
+   
+}
+
 
 Button {
    border-radius: 15px !important; 
    background-color: blue !important; 
    height: 50px !important; 
    margin-top: 50px !important; 
+   margin: 0px 10px !important; 
     
-       position: relative !important;
+
 
 
 }
 
 
 
+@media only screen and (min-width : 150px) and (max-width : 780px)
+{
+	
+	.Searchterm
+	{
+        min-width: 300px !important;
+		width: 100% !important;
+        margin: 10px 20px !important;
+
+	}
+
+}
+
+
+@media only screen and (min-width : 150px) and (max-width : 780px)
+{
+	
+Button 
+	{
+		
+        margin: 10px 20px  !important;
+
+	}
+
+}
+
 
 
 Input {
-    margin: 0px !important; 
+
     padding: 10px !important; 
 
-    margin-top: 50px !important; 
+
     width: 700px !important; 
     left: 150px !important; 
     display: flex !important; 
