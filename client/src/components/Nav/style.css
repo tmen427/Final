@@ -269,6 +269,7 @@ h1.text-center{
 	background:#eee;
 }
 /* ------Header------------------------------------------------------------ */
+
 .main-header {
 	position:absolute;
 	top:0;
@@ -299,9 +300,17 @@ ul {
 	list-style-type: none;
    }
 
+
+
 .dark-header {
 	background: white; 
+
+	
 }
+ul {
+	position: relative; 
+}
+
 .fs-header {
 	padding:0px 50px;
 }
@@ -549,6 +558,8 @@ ul {
     text-align: left;
     padding: 6px 15px;
 }
+
+	
 /* ------Navigation------------------------------------------------------------ */
 .nav-holder {
 	float:right;

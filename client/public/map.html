@@ -620,7 +620,7 @@ blockquote p {
 .header-user-menu ul {
 	margin: 10px 0 0 0;
     opacity: 0;
-    visibility: hidden;
+
     position: absolute;
     min-width: 150px;
     top: 60px;
@@ -676,8 +676,9 @@ blockquote p {
 }
 .nav-holder nav li ul {
 	margin: 30px 0 0 0;
+
 	opacity: 0;
-	visibility: hidden;
+	visibility: visible;
 	position: absolute;
 	min-width:150px;
 	top: 50px;
@@ -713,6 +714,7 @@ blockquote p {
 	position:relative;
 }
 .nav-holder nav li a {
+
 	float: left;
 	padding: 10px;
     font-size: 15px;
@@ -730,7 +732,7 @@ blockquote p {
 }
 .nav-holder nav li a:before {
 	content:'';
-	position:absolute;
+	position:fixed;
 	bottom:-19px;
 	left:0;
 	right:0;
@@ -1249,400 +1251,15 @@ section.gray-section .section-separator {
 }
 .vis-header-search {
 	display:none;
-	position:absolute;
+
+	position:fixed;
 	left:20px;
 	top:100px;
 	border-radius:30px;
 	box-shadow: 0px 0px 0px 7px rgba(0,0,0,0.2);
 }
-.slider-container-wrap .sw-btn{
-	margin-top:0;
-	top:10%;
-}
-.slider-container-wrap {
-    padding: 250px 0 400px;
-}
-}
-@media only screen and  (max-width: 1064px) {
-.nav-button-wrap , .mob-bg{
-	display:block;
-}
-.fixed-footer {
-	position:relative !important;
-	float:left;
-}
-.main-menu nav ul , video.bgvid , .height-emulator , .back-to-filters {
-	display:none;
-}
-.col-list-wrap {
-    overflow:hidden;
-}
-.main-menu{
-	position: absolute  ;
-	top:80px;
-	right:-20px;
-	width:300px;
-	z-index:50;
- 	padding:15px 10px ;
- 	background:#fff;
-	border-bottom-left-radius:6px;
-	border-left:1px solid #eee;
-	border-bottom:1px solid #eee;
-	visibility:hidden;
-	opacity:0;
-	-webkit-transition: all 0.4s  ease-in-out;
-	transition: all 0.4s  ease-in-out;
-}
-.vismobmenu {
-	opacity:1;
-	right:0;
-	visibility:visible;
-}
-.menusb {
-	display:block;
-	float:left;
-	position:relative;
-	width:100%;
-	overflow:hidden;
-}
-.main-menu .menusb ul  {
-	display:block;
-	float:left;
-	position:relative;
-	width:100%;
-}
-.menusb li {
-	margin: 0;
-	float: left;
-	width:100%;
-	position:relative;
-	overflow:hidden;
-	padding:0 20px;
-}
-.menusb   li i {
-	position:absolute;
-	right:18px;
-	top:12px;
-}
-.menusb  a {
-	float:left;
-	width:100%;
-	padding:8px 5px;
-	position:relative;
-	font-weight: 700;
-	font-size: 14px;
-	color: #566985;
-	line-height:20px;
-	text-align:left;
-}
-.menusb  a i{
-	transform: rotate(-90deg);
-}
-.menusb a.back{
-	padding-left:24px;
-}
-.menusb a.back:before{
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: inherit;
-	content: "\f177";
-	font-size:14px;
-}
-.process-wrap li {
-    padding: 25px 20px;
-}
-.footer-widget , .video-box  , .user-profile-menu-wrap{
-	margin-bottom:20px;
-}
-.images-collage {
-	margin-bottom:70px;
-}
-.listing-item-grid .listing-item-cat h3{
-	font-size:16px;
-}
-.about-wrap .list-single-main-item-title h3 {
-	padding-top:30px;
-}
-.team-box  {
-	width:50%;
-}
-.join-wrap-btn {
-	display:block;
-	float:left;
-}
-.color-bg-text {
-    padding-left: 0;
-}
-section.list-single-section {
-	padding-top:100px;
-}
-.list-single-header-column .viewed-counter, .list-single-header-column .custom-scroll-link  {
-	float:left;
-}
-.share-holder.hid-share {
-    position: relative;
-    margin-left:0;
-	float:left;
-	margin-right:30px;
-}
-.share-holder.hid-share .share-container {
-	right:inherit;
-	left:0;
-}
-.share-holder.hid-share .share-container:after, .share-holder.hid-share .share-container:before {
-	right:inherit;
-	left:20px;
-}
-.col-list-wrap {
-	width:100%;
-}
-.map-container.column-map {
-    width: 100%;
-    position: relative;
-	float:left;
-	height:500px;
-	top:0;
-}
-.absolute-main-search-input {
-    margin-left: -300px;
-    width: 600px;
-}
-.edit-profile-photo {
-	margin-top:40px;
-}
-.edit-profile-photo img {
-	width:100px;
-	float:left;
-	margin-left:30px;
-}
-.change-photo-btn {
-	margin-top:0;
-}
-.copyright {
-	display:block;
-	text-align: left;
-	float:left;
-	width:100%;
-	margin:15px 0;
-	top:15px;
-}
-.card-post  {
-	margin-bottom:20px;
-}
-.slider-container-wrap.fs-slider .hero-section-wrap {
-	top:15%;
-	padding-top:0;
-}
-.slider-container-wrap.fs-slider .sw-btn {
-    margin-top: 0;
-    top: 90%;
-}
-.main-search-input-item .nice-select {
-	background:#fff;
-}
-.booking-modal-container {
-    margin: 50px auto 70px;
-	padding:0 20px;
-}
-}
-@media only screen and  (max-width: 768px) {
-.gallery-item , #progressbar li {
-	width:50%;
-}
-#progressbar li {
-	margin-bottom:16px;
-}
-.process-wrap li , .price-item   , .time-line-box , .listing-item ,  .listsearch-input-item  , .center-col-list-wrap .listing-item , .dashboard-listing-table-text , .dashboard-listing-table-image{
-	width:100%;
-}
-.listsearch-input-item  , .box-cat , .dashboard-listing-table-image {
-	margin-bottom:10px;
-}
-.dashboard-listing-table-image {
-	padding:0;
-}
-.price-item  , .tl-text {
-	margin-bottom:30px;
-}
-.best-price {
-    top: 0;
-    transform: scale(1.0);
-}
-.footer-social {
-	float:left;
-	margin-top:15px;
-}
-.footer-social li {
-	margin-left:0;
-	margin-right:23px;
-}
-.hero-section .intro-item h2 {
-	font-size:44px;
-}
-.main-search-input {
-    background:rgba(255,255,255,0.2);
-    padding: 14px 20px 10px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 0px 10px rgba(255,255,255,0.0);
-}
-.main-search-input-item {
-    width: 100%;
-    border: 1px solid #eee;
-    height: 50px;
-	border:none;
-	margin-bottom:10px;
-}
-.main-search-input-item .selectbox {
-	background:#fff;
-	border-radius: 6px !important ;
-}
-.main-search-input-item input {
-    border-radius: 6px !important ;
-	background:#fff;
-}
-.main-search-button {
-	position:relative;
-	float:left;
-	width:100%;
-	border-radius:6px;
-}
-.listing-item-grid .listing-counter , .time-line-container:before , .time-line-container:after , .scroll-nav-wrapper  , .cs-countdown-item:before , .show-search-button span , .show-reg-form:before , .listing-view-layout{
-	display:none;
-}
-.single-facts .inline-facts-wrap , .cs-countdown-item  , .statistic-item-wrap  {
-	width:50%;
-}
-.cs-wrapper {
-	padding: 100px 20px 50px;
-}
-.cs-countdown-item span {
-	font-size:54px;
-}
-.add-list {
-    padding: 8px 16px;
-    top: 26px;
-	font-size:15px;
-}
-.fs-header {
-    padding: 0px 20px;
-}
-.reviews-comments-item {
-    padding: 0 0 30px 0;
-}
-.review-comments-avatar {
-    position: relative;
-    left: 20px;
-	float:left;
-	margin-bottom:20px;
-}
-.show-reg-form {
-	margin-right:20px;
-}
-.main-register-holder {
-	padding:0 20px;
-}
-.header-search-input-item input {
-    width: 90px;
-}
-.vis-header-search {
-	margin-left:0;
-}
-.absolute-main-search-input {
-    margin-left: -150px;
-    width: 300px;
-}
-.header-user-menu {
-	position:fixed;
-	right:0;
-	top:100px;
-	z-index:30;
-}
-.header-user-name {
-	background: #2F3B59;
-	padding:15px 20px;
-	border-radius:6px;
-}
-.header-user-name span {
-	top:4px;
-	left:-30px;
-}
-/* .header-user-name span img {
-	width:100%;
-	height:100%;
-} */
-.header-user-name:before {
-	bottom:16px;
-	right:-16px;
-}
-.box-cat {
-	min-width:80px;
-	padding:10px 0;
-}
-.logo-holder {
-    height: 20px;
-	top:32px;
-}
-.success-table-header a {
-    float: left;
-    top: 0;
-}
-.success-table-header p{
-	width:100%;
-}
-}
-@media only screen and  (max-width: 540px) {
-.gallery-item  , .single-facts .inline-facts-wrap , .team-box   , .cs-countdown-item , .list-single-header-contacts li   , .list-single-facts .inline-facts-wrap , .listing-features li , .listing-item , .statistic-item-wrap , #progressbar li{
-	width:100%;
-}
-#progressbar {
-    padding: 20px 20px 0;
-}
-.list-single-header-contacts li  {
-	text-align:left;
-	margin-bottom:10px;
-}
-.list-single-facts .inline-facts-wrap  , .tags-stylwrap a {
-	margin-bottom:10px;
-}
-.hero-section .intro-item h2  , .parallax-section .section-title h2  , .soon-title , .list-single-header-item h2 , .list-single-header-inside .list-single-header-item h2{
-	font-size:34px;
-}
-.cs-social li {
-    margin: 0 5px;
-}
-.error-wrap h2 {
-	font-size:94px;
-}
-.list-single-carousel-wrap {
-	height:300px;
-}
-.fw-carousel .slick-slide-item {
-    height: 300px !important;
-}
-.list-single-facts .inline-facts-wrap:before {
-	display:none;
-}
-.add-list {
-	display:none;
-}
-header.main-header {
-	padding:0 10px;
-}
-.show-reg-form {
-	margin-right:5px;
-}
-.slider-container-wrap.fs-slider .hero-section-wrap {
-	top:15%;
-	padding-top:0;
-}
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-.bg {
-	background-attachment: scroll !important;
-	background-position:center;
-}
-}
+
+
 
     </style>
 
@@ -1671,17 +1288,35 @@ header.main-header {
             </div>
           
 
-            <!-- nav-button-wrap--> 
-            <div class="nav-button-wrap color-bg">
-                <div class="nav-button">
-                    <span></span><span></span><span></span>
-                </div>
-            </div>
-            <!-- nav-button-wrap end-->
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/saved">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="map.html">Map</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/inputdata">User Posts</a>
+	  </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="/login">Sign In</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 			<!--  navigation --> 
-			
-            <div class="nav-holder main-menu">
-                <nav>
+		<!--
+    <div class="nav-holder main-menu">
+              <nav>
                     <ul>
                         <li>
                             <a href="/home">Home</a>
@@ -1706,7 +1341,8 @@ header.main-header {
                 </nav>
             </div>
             <!-- navigation  end -->
-        </div>
+		</div>
+			--!>
     </header>
     <!-- Map -->
     <div id='map'></div>
