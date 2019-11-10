@@ -96,17 +96,19 @@ Input {
 
 
 .okay {
-    background-color: lightgrey !important; 
+
     background-image: url('sky.jpeg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    z-index: 5px;
+    
     min-height: 800px !important;
 }
 
 body {
-    background-color: lightgrey !important ;
+    background-color: rgb(151, 231, 151);
 }
+
+
 
 .form-control {
     border-color: lightgrey !important; 

@@ -101,7 +101,7 @@ class Inputdata extends Component {
         var x = this.state.locations.length; 
         return (
             <div>
-                <Nav />
+        
                 <Jumbotron />
                 <Container>
                     <Row>

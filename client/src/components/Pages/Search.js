@@ -133,15 +133,15 @@ if (res.data[i].address.includes("United States")===true) {
 
         return (
             <div class='okay'>
-                <Nav />
+          
     
                 <Container>             
                     <div class = 'do'>
        
                     <Row>
-
       
-             <div class='container'></div>
+      
+             <div class='container'>  </div>
                     
 
                             <form class = 'form-search form-inline'>

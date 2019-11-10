@@ -2,7 +2,7 @@ footer {
     text-align: center;
     color: white;
     position: absolute !important; 
-    background-color: white; 
+    background-color: black; 
     vertical-align: center;
     bottom: 0px;
     width: 100%;
@@ -22,7 +22,7 @@ footer {
     text-transform: none;
     line-height: 25px;
     font-family: 'Quicksand', sans-serif;
-    color: black;
+    color: white;
     margin-top: 0px; 
    background-color: geeen !important; 
     

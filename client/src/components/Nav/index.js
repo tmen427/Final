@@ -1,42 +1,48 @@
 import React from "react";
 import "./style.css";
 
+
+
+
+
+
 function Nav() {
+
+
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "25%";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0%";
+  }
+
+
+
+
   return (
-    <div>
-    <header class="main-header dark-header fs-header sticky">
-      <div class="header-inner">
-       <div class="nav-holder main-menu">
-            <nav >
-              <ul>
+<div class="navigation">
+          
+<div id="mySidenav" class="sidenav">
+<a href="javascript:void(0)" class="closebtn" onClick={()=>closeNav()}>&times; </a>
+<hr></hr>
+<a href="/home">Home</a>
+<a href="/saved">Recent Searches</a>
+<a href="map.html">Map</a>
+<a href="/inputdata">User Posts</a>
+<a href="/login">Log In</a>
+<a href="/signup">Sign Up</a>
 
-                <li>
-                  <a href="/home">Home <span className="sr-only">(current)</span></a>
+<hr></hr>
+<a href="#"><i>MAPA</i></a>  
+  </div>
 
-                </li>
-                <li>
-                  <a class="act-link" href="/saved">Recent Searches</a>
-                </li>
+  <div class='z'>
+<span class="hamburger" onClick= {()=>openNav()}>&#9776; </span>
+     </div>
 
-                <li>
-                  <a href="map.html">Map</a>
 
-                </li>
-
-                <li> <a href="/inputdata" >User Posts </a></li>
-                <li>
-                <a href="/login" >Sign In</a>   
-                </li>
-               
-
-              </ul>
-            </nav>
-          </div>
-        </div>
-  </header>
 </div>
-
-
 
       );
     }
