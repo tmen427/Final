@@ -18,7 +18,7 @@ Input {
 }
 
 .Searchterm {
-    border-radius: 15px !important;
+    border-radius: 5px !important;
     max-width: 700px !important;
     margin-top: 50px; 
     margin: 0px 10px !important;
@@ -29,15 +29,12 @@ Input {
 
 
 Button {
-   border-radius: 15px !important; 
+   border-radius: 5px !important; 
    background-color: blue !important; 
    height: 50px !important; 
    margin-top: 50px !important; 
    margin: 0px 10px !important; 
     
-
-
-
 }
 
 
@@ -119,7 +116,7 @@ body {
 
 .intro1 {
     font-size: 50px !important;
-    margin-top: 200px; 
+    margin-top: 100px; 
     position: relative ;
  
 }
