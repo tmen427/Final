@@ -141,11 +141,11 @@ if (res.data[i].address.includes("United States")===true) {
                     <Row>
       
       
-             <div class='container'>  </div>
+             <div class='container'> 
                     
 
                             <form class = 'form-search form-inline'>
-                    <div class='intro1'><strong>Find bathrooms, water fountains and bicycle racks </strong> </div>             
+                    <div class='intro1'><strong>Find bathrooms, water fountains & bike racks </strong> </div>             
                                     <Row>
    
  
@@ -171,9 +171,12 @@ if (res.data[i].address.includes("United States")===true) {
                                 
                             </form>
 
-                
+                            </div>
                     </Row>
                   
+                   
+                   
+                   
                     <Row>
                    <h2>
                    <b>{this.state.showFound? 'Cannot Find this Location...' : ''}</b> 

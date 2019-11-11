@@ -20,9 +20,10 @@ Input {
 .Searchterm {
     border-radius: 5px !important;
     max-width: 700px !important;
-    margin-top: 50px; 
-    margin: 0px 10px !important;
-    min-width: 500px !important;
+ 
+    margin: 40px 10px !important;
+    width: 1100px !important; 
+
 
    
 }
@@ -33,7 +34,7 @@ Button {
    background-color: blue !important; 
    height: 50px !important; 
    margin-top: 50px !important; 
-   margin: 0px 10px !important; 
+   margin: 40px 10px !important; 
     
 }
 
@@ -50,8 +51,8 @@ Button {
         
 
     }
-    .okay {
-        padding: 30px !important; 
+    .container {
+        margin: 5px; 
     }
 
 }
@@ -119,8 +120,8 @@ body {
 
 
 .intro1 {
-    font-size: 50px !important;
+    font-size: 43px !important;
     margin-top: 100px; 
-    position: relative ;
+
  
 }
