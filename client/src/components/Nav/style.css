@@ -58,9 +58,10 @@ body {
   }
 
   @media screen and (max-width: 700px) {
-	
+	#mySidenav {width: 30%;}
 	.sidenav a {font-size: 18px; 
 	padding: 5px  ;
+
 
 
 }
