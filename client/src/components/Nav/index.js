@@ -10,7 +10,7 @@ function Nav() {
 
 
   function openNav() {
-    document.getElementById("mySidenav").style.width = "20%";
+    document.getElementById("mySidenav").style.width = "50%";
   }
   
   function closeNav() {
@@ -30,8 +30,8 @@ function Nav() {
 <a href="/saved">Recent Searches</a>
 <a href="map.html">Map</a>
 <a href="/inputdata">User Posts</a>
-<a href="/login">Log In</a>
-<a href="/signup">Sign Up</a>
+<a href="/login">Log In/Sign Up</a>
+
 
 <hr></hr>
 <a href="#"><i>MAPA</i></a>  
