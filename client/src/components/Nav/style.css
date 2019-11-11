@@ -21,11 +21,12 @@ body {
 	z-index: 1000000;
 	top: 0;
 	left: 0;
-	background-color: tan;
+	background-color: black;
 	overflow-x: hidden;
 	transition: 0.5s;
 	padding-top: 60px;
 	text-align:left;
+	
   }
   
   .sidenav a {
@@ -33,9 +34,10 @@ body {
 	padding: 8px 8px 8px 32px;
 	text-decoration: none;
 	font-size: 25px;
-	color: black;
+	color: white !important; 
 	display: block;
 	transition: 0.3s;
+
   
   }
   
