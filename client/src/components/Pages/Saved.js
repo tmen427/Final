@@ -105,7 +105,7 @@ class Search extends Component {
                             <Modal.Title id="modal-styling-title">
                                   <p>{this.state.nameDB}</p>
                                   <p>Address: <span id="notbold">{this.state.addressDB}</span></p>
-                            </Modal.Title>
+                            </Modal.Title>sup bro 
                         </Modal.Header>
                         <Modal.Body>
 

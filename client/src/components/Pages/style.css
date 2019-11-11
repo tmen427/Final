@@ -99,10 +99,7 @@ Input {
 
 .okay {
 
-    background-image: url('sky.jpeg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    
+ 
     min-height: 800px !important;
 }
 
@@ -124,4 +121,24 @@ body {
     margin-top: 100px; 
 
  
+}
+
+.holder {
+    width: 100%; 
+}
+
+.recent {
+    width: 100%; 
+    padding: 10px; 
+    font-size: 40px;
+    font-weight: bold; 
+    text-align: center;
+
+
+    font-style: italic;
+}
+
+.maps {
+   padding: 10px; 
+
 }

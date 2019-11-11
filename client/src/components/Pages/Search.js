@@ -9,6 +9,12 @@ import { List, ListItem } from "../ListItem";
 import { Container, Row, Col } from "../Grid";
 import Nav from "../Nav";
 
+import ReactMapboxGl, { Layer, Feature, Marker } from "react-mapbox-gl";
+
+const Map = ReactMapboxGl({
+    accessToken: "pk.eyJ1IjoiZGF2aWR2bzE5OTAiLCJhIjoiY2p4MmsyOXJsMDAxYTQ4cGg3cHMwcTZkMCJ9.mHHhKy1QIfmGF_TC88vSUg"
+});
+
 
 class Search extends Component {
     state = {
@@ -16,11 +22,16 @@ class Search extends Component {
         locationSearch: "",
         message:"", 
         toLink: false,
-        showFound: false
+        showFound: false,
+       
+        addressDB: "",
+        nameDB: "",
+        longitudeDB: "",
+        latitudeDB: "",
     };
 
     componentDidMount() {
-      //  this.loadSearch();    //this will load the previous search when you go on the homepage, now turned off 
+       this.loadSearch();    //this will load the previous search when you go on the homepage, now turned off 
     }
 
     loadSearch = () => {
@@ -181,8 +192,43 @@ if (res.data[i].address.includes("United States")===true) {
                    <h2>
                    <b>{this.state.showFound? 'Cannot Find this Location...' : ''}</b> 
                           </h2>
-                         
+{ (console.log(this.state.venues[0]))}
 
+{(console.log(this.state.venues.slice(Math.max(this.state.venues.length - 5, 1))))}
+
+<div className='holder'>
+<div className='recent'>Recent Searches </div>
+</div>
+      {(this.state.venues.slice(Math.max(this.state.venues.length - 6, 1)).map(item =>
+            
+                       <Map className='maps'
+                                style="mapbox://styles/mapbox/streets-v11"
+                                zoom={[13]}
+                                center={[item.longitude, item.latitude]}
+                                containerStyle={{
+                                    width: '30%',
+                                    height: '150px',
+                                }}
+                            >
+                                <Marker
+                                    coordinates={[item.longitude, item.latitude]}
+                                    anchor="bottom">
+                                    <img src={"./assets/img/marker.png"} />
+                                </Marker>
+                                <Layer
+                                    type="symbol"
+                                    layout={{ "icon-image": "marker-15" }}>
+                                    <Feature
+                                        coordinates={[item.longitude, item.latitude]}
+                                        
+                                    />
+                                </Layer>
+                            </Map>
+                       
+))}
+                     
+           
+                
                         {/*
                         <Col size="xs-12">
                             {!this.state.venues.length ? (
