@@ -143,13 +143,13 @@ if (res.data[i].address.includes("United States")===true) {
         }
 
         return (
-            <div class='okay'>
-          
-    
-                <Container>             
+ 
+  
+    <div>
+            
 
        
-                    <Row>
+                
       
       
              <div class='container'> 
@@ -157,7 +157,7 @@ if (res.data[i].address.includes("United States")===true) {
 
                             <form class = 'form-search form-inline'>
                     <div class='intro1'><strong>Find bathrooms, water fountains & bike racks </strong> </div>             
-                                    <Row>
+                        
    
  
                                             <Input class='Searchterm'
@@ -177,44 +177,52 @@ if (res.data[i].address.includes("United States")===true) {
                                              Search
                                             </Button>
                           
-                                    </Row>
+                       
                 
                                 
                             </form>
 
                             </div>
-                    </Row>
+     
                   
                    
                    
                    
-                    <Row>
+                 
                    <h2>
                    <b>{this.state.showFound? 'Cannot Find this Location...' : ''}</b> 
                           </h2>
 { (console.log(this.state.venues[0]))}
 
 {(console.log(this.state.venues.slice(Math.max(this.state.venues.length - 5, 1))))}
-
+{(console.log(this.state.venues.filter(item =>  item.saved )) )}
+ {(console.log(this.state.venues.filter(item =>  item.saved).slice(Math.max(this.state.venues.length - 8, 1)).map(item =>  item.address )))}
 <div className='holder'>
+  <hr></hr>  
 <div className='recent'>Recent Searches </div>
+
+
 </div>
-      {(this.state.venues.slice(Math.max(this.state.venues.length - 6, 1)).map(item =>
-            
-                       <Map className='maps'
+
+
+      {(this.state.venues.filter(item =>  item.saved).slice(Math.max(this.state.venues.length - 8, 1)).map(item =>
+         <div id='hello'>
+                       <Map className='maps'  
                                 style="mapbox://styles/mapbox/streets-v11"
                                 zoom={[13]}
                                 center={[item.longitude, item.latitude]}
                                 containerStyle={{
-                                    width: '30%',
-                                    height: '150px',
+                                    width: '100%',
+                                    height: '220px',
                                 }}
-                            >
+                            
+                            >   
                                 <Marker
                                     coordinates={[item.longitude, item.latitude]}
                                     anchor="bottom">
                                     <img src={"./assets/img/marker.png"} />
                                 </Marker>
+                    
                                 <Layer
                                     type="symbol"
                                     layout={{ "icon-image": "marker-15" }}>
@@ -223,8 +231,10 @@ if (res.data[i].address.includes("United States")===true) {
                                         
                                     />
                                 </Layer>
+                               
                             </Map>
-                       
+<p><i>{item.address}</i></p>
+                      </div>   
 ))}
                      
            
@@ -254,9 +264,9 @@ if (res.data[i].address.includes("United States")===true) {
                                 )}
                         </Col>
                                      comment this out for now       */}
-                    </Row>
-                </Container>
-            </div>
+        
+</div>
+    
         );
     }
 }

@@ -13,9 +13,11 @@ import { Redirect } from 'react-router-dom';
 
 function App() {
   return (
-    <Router>
+      
+   <Router>
+
       <div>
-        <Nav />
+      <Nav />
         <Switch>
           <Route exact path="/" component={Search} />
         
@@ -40,7 +42,7 @@ function App() {
     
 
         </Switch>
-        <Footer />
+   
       </div>
     </Router>
   );
