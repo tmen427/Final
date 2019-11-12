@@ -70,9 +70,10 @@ body {
 
   
   .hamburger {
-	color: white; 
+	color:white;
 	font-size:30px;
-	padding-left: 5px;
+	padding-left: 10px;
+
 	cursor:pointer
   
   }
@@ -86,6 +87,6 @@ body {
 
   .navigation {
 	  background-color: black;
-	  height: 50%;
+		height: 80px;
 	  z-index: 3; 
   }
