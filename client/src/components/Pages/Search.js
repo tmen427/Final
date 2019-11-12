@@ -145,8 +145,8 @@ if (res.data[i].address.includes("United States")===true) {
         return (
  
   
-    <div>
-             <div class='container'> 
+    <div class='everything'>
+             <div class='searchdiv'> 
                       <form class = 'form-search form-inline'>
                     <div class='intro1'><strong>Find bathrooms, water fountains & bike racks </strong> </div>             
                                             <Input class='Searchterm'
@@ -212,7 +212,8 @@ if (res.data[i].address.includes("United States")===true) {
                                 </Layer>
                                
                             </Map>
-       <p class='description'>{item.address}</p>
+       <p class='description'>{item.address}  </p>
+
                       </div>   
 ))}
                      

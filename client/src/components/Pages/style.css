@@ -19,10 +19,12 @@ Input {
 
 .Searchterm {
     border-radius: 5px !important;
-    max-width: 700px !important;
+    
+    margin-left: 300px !important; 
  
-    margin: 40px 10px !important;
-    width: 1100px !important; 
+ 
+    max-width: 100% !important; 
+    border-style: solid; 
 
 
    
@@ -33,8 +35,9 @@ Button {
    border-radius: 5px !important; 
    background-color: blue !important; 
    height: 50px !important; 
-   margin-top: 50px !important; 
+   margin-top: 30px !important; 
    margin: 40px 10px !important; 
+   border-style: solid;
     
 }
 
@@ -82,11 +85,14 @@ Input {
 
 }
 
-.container {
+.searchdiv {
     
-    max-width: 100vw;
+    max-width: 100%;
     background-color: yellow; 
-    height: 60% !important; 
+   
+
+    
+
   }
 
 .yo {
@@ -104,7 +110,8 @@ Input {
 }
 
 body {
-    background-color:white;
+
+    position: relative;
 }
 
 
@@ -117,9 +124,9 @@ body {
 
 
 .intro1 {
-    font-size: 45px !important;
+    font-size: 45px ;
     margin-top: 100px; 
-    margin-left: 10px
+    margin-left: 17%;
 
  
 }
@@ -129,10 +136,14 @@ body {
 }
 
 .recent {
-    width: 100%; 
-    padding: 10px 29px; 
+
+    padding: 10px 70px; 
     font-size: 20px;
     font-weight: bold; 
+    position: relative ;
+    margin-top: 25px; 
+   
+
 
 }
 
@@ -145,9 +156,10 @@ body {
 }
 
 #hello {
-  
+  left: 50px ; 
+  position: relative; 
   margin: 20px ; 
-  padding: 10px; 
+
   width: 400px !important; 
   height: 260px !important; 
 

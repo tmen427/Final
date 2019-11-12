@@ -3,7 +3,7 @@ import "./style.css";
 
 function Footer(){
     return(
-        <div>
+        <div class='bottom'>
         
         <footer>
             <div className="copyright">copyright &copy; 2019 Mapa</div>

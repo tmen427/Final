@@ -97,7 +97,7 @@ this.setState({password:""});
           </Button>
 
           <p className="mt-3">Click <a href="/signup">HERE </a> to Register!</p>
-          <p className="mt-1">Click <a href="/"> HERE </a> to return home</p>
+          <p className="mt-1">Click <a href="/"> HERE </a> to Return home</p>
         </form>
       </div>
       </div>

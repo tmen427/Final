@@ -1,7 +1,11 @@
+.bottom {
+    position: relative;
+}
+
 footer {
     text-align: center;
     color: white;
-    position: absolute !important; 
+    position: absolute ; 
     background-color: black; 
     vertical-align: center;
     bottom: 0px;
@@ -23,7 +27,7 @@ footer {
     line-height: 25px;
     font-family: 'Quicksand', sans-serif;
     color: white;
-    margin-top: 0px; 
-   background-color: geeen !important; 
+
+
     
 }
