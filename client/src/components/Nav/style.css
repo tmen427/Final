@@ -70,7 +70,7 @@ body {
 
   
   .hamburger {
-	color: black; 
+	color: white; 
 	font-size:30px;
 
 	cursor:pointer
@@ -78,14 +78,14 @@ body {
   }
   
   .z {
-	  margin: 5px 20px; 
+
 	  padding: 5px;
 	  
   }
   
 
   .navigation {
-	  background-color: rgb(151, 231, 151);
+	  background-color: black;
 	  height: 50%;
 	  z-index: 3; 
   }

@@ -146,59 +146,38 @@ if (res.data[i].address.includes("United States")===true) {
  
   
     <div>
-            
-
-       
-                
-      
-      
              <div class='container'> 
-                    
-
-                            <form class = 'form-search form-inline'>
+                      <form class = 'form-search form-inline'>
                     <div class='intro1'><strong>Find bathrooms, water fountains & bike racks </strong> </div>             
-                        
-   
- 
                                             <Input class='Searchterm'
                                                 name="locationSearch"
                                                 value={this.state.locationSearch}
                                                 onChange={this.handleInputChange}
                                                 placeholder="Search by Address, City or State"
                                             />
- 
-                  
-                       
                                             <Button class='here'
                                                 onClick={ this.handleFormSubmit }
                                                 type="success"
                                                 className="input-lg"
                                             >
                                              Search
-                                            </Button>
-                          
-                       
-                
-                                
+                                            </Button>         
                             </form>
 
-                            </div>
-     
-                  
-                   
-                   
-                   
-                 
-                   <h2>
+                     </div>
+                     <h2>
                    <b>{this.state.showFound? 'Cannot Find this Location...' : ''}</b> 
                           </h2>
+
+
+
 { (console.log(this.state.venues[0]))}
 
 {(console.log(this.state.venues.slice(Math.max(this.state.venues.length - 5, 1))))}
 {(console.log(this.state.venues.filter(item =>  item.saved )) )}
  {(console.log(this.state.venues.filter(item =>  item.saved).slice(Math.max(this.state.venues.length - 8, 1)).map(item =>  item.address )))}
 <div className='holder'>
-  <hr></hr>  
+
 <div className='recent'>Recent Searches </div>
 
 
