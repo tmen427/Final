@@ -86,7 +86,7 @@ Input {
     
     max-width: 100vw;
     background-color: yellow; 
-    height: 60%; 
+    height: 60% !important; 
   }
 
 .yo {

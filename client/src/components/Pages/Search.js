@@ -184,7 +184,7 @@ if (res.data[i].address.includes("United States")===true) {
 </div>
 
 
-      {(this.state.venues.filter(item =>  item.saved).slice(Math.max(this.state.venues.length - 8, 1)).map(item =>
+      {(this.state.venues.filter(item =>  item.saved).slice(Math.max(this.state.venues.length - 10, 1)).map(item =>
          <div id='hello'>
                        <Map className='maps'  
                                 style="mapbox://styles/mapbox/streets-v11"
