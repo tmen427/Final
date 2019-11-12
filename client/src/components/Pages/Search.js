@@ -212,7 +212,7 @@ if (res.data[i].address.includes("United States")===true) {
                                 </Layer>
                                
                             </Map>
-<p><i>{item.address}</i></p>
+       <p class='description'>{item.address}</p>
                       </div>   
 ))}
                      
