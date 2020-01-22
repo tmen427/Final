@@ -13,8 +13,8 @@ var axios = require("axios");
 const app = express();
 // Require all models
 // var db = require("./models");
-//STARTING LOGIN CODE HERE
-// Requiring necessary npm packages
+
+
 
 var session = require("express-session");
 // Requiring passport as we've configured it
