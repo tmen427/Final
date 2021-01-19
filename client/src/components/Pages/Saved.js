@@ -86,7 +86,7 @@ class Search extends Component {
                                                     </div>
                                                 )
                                             };
-                                        })}
+                                        }).reverse()}
                                     </List>
 
                                 )}

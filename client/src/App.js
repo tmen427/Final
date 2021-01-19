@@ -22,7 +22,7 @@ function App() {
           <Route exact path="/" component={Search} />
         
           <Route exact path="/home" component={Search} />
-          <Route exact path="/saved" component={Saved} />
+          <Route exact path="/recent" component={Saved} />
           <Route exact path="/inputdata" component={Inputdata} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/signup" component={Signup} />

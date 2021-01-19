@@ -636,7 +636,7 @@ blockquote p {
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; </a>
   <hr>
   <a href="/home">Home</a>
-  <a href="/saved">Recent-Searches</a>
+  <a href="/recent">Recent-Searches</a>
   <a href="map.html">Map</a>
   <a href="/inputdata">User Posts</a>
   <a href="/signup">Log In/Sign Up</a>
@@ -878,7 +878,8 @@ var bicycleAddress = [];
 //whatever the url of the page is...search that via another get request?
 
 $.getJSON("/api/locations", function (data) {
-	 console.log(data)
+	console.log('this is the data that is onload')
+	console.log(data)
 
 	for (var i = 0; i < data.length; i++) {
 
@@ -888,6 +889,7 @@ $.getJSON("/api/locations", function (data) {
 			waterMessage.push(data[i].message)
 			waterName.push(data[i].name)
 			waterAddress.push(data[i].address)
+	
 		}
 		else if (data[i].feature === "bathroom") {
 			bathroomCoor.push(coor)
@@ -902,28 +904,16 @@ $.getJSON("/api/locations", function (data) {
 			bicycleAddress.push(data[i].address)
 		}
 	}
-	//  console.log(waterCoor)
-	//  console.log(bathroomCoor)
-	//  console.log(bicycleCoor)
-	//  console.log(waterMessage)
-	//  console.log(bathroomMessage)
-	//  console.log(bicycleMessage)
-	// console.log(waterName)
-	// console.log(bathroomName)
-	// console.log(bicycleName)
-	// console.log(waterAddress)
-	// console.log(bathroomAddress)
-	// console.log(bicycleAddress)
+	//on page load, load the previous markers from the database
+	createGeojson(waterCoor, waterMessage, "water.png", waterName, waterAddress);
+	makeMarkers(features, "water")
+	createGeojson(bathroomCoor, bathroomMessage, "bathroom.png", bathroomName, bathroomAddress);
+	makeMarkers(features, "bathroom")
+	createGeojson(bicycleCoor, bicycleMessage, "bicycle.png", bicycleName, bicycleAddress);
+	makeMarkers(features, "bicycle")
 })
 
 
-// var waterCoor = [[-93.258, 44.986], [-93.258, 44.996], [-93.275, 44.986], [-93.278, 44.984], [-93.27333, 44.986], [-93.2744, 44.986], [-93.2756, 44.986], [-93.278, 44.988]]
-
-// var bathroomCoor = [[-93.2181, 44.9861], [-93.2181, 44.9961], [-93.2156, 44.9866], [-93.2186, 44.9846], [-93.213336, 44.9866], [-93.2144, 44.9866], [-93.2156, 44.9866], [-93.2186, 44.9886]]
-
-// var bicycleCoor = [[-93.25816, 44.98616], [-93.25816, 44.99616], [-93.27566, 44.98666], [-93.27866, 44.98466], [-93.2733366, 44.98666], [-93.27446, 44.98666], [-93.27566, 44.98666], [-93.27866, 44.98866]]
-
-// var message = ["fi", "foo", "fa", "fee", "fuu", "fin", "faa", "fii"]
 var features = [];
 
 function createGeojson(arr, mess, image, name, address) {       //this function is called below 
@@ -958,14 +948,11 @@ var sz = document.forms['featureForm'].elements['feature'];      //the number of
 for (var i = 0, len = sz.length; i < len; i++) {
   //  console.log(sz[i]);
 	sz[i].onclick = function () {         //when you click on one of the three buttons do this
-		//location.reload();  
-		//map.resize()
-		//console.log(this.value)
-		//new mapboxgl.Marker(el).addTo(map)
-		//mapboxMap.removeAnnotations();
+
 
 		if (this.value === "water") {
 			features = [];      //features is not empty check above code line 325
+	
 			createGeojson(waterCoor, waterMessage, "water.png", waterName, waterAddress);
 		 //   alert(features)
 			makeMarkers(features, this.value)

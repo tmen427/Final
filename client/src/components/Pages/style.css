@@ -88,12 +88,9 @@ Input {
 .searchdiv {
     
     max-width: 100%;
-    background-color: yellow; 
 
-    height: 400px; 
-   
-
-    
+    background-image: url("sky.jpeg");
+    height: 500px; 
 
   }
 
@@ -124,11 +121,10 @@ body {
 
 
 
-
 .intro1 {
     font-size: 45px ;
     margin-top: 100px; 
-    margin-left: 17%;
+    margin-left: 15%;
 
  
 }
@@ -139,7 +135,7 @@ body {
 
 .recent {
 
-    padding: 10px 70px; 
+    padding: 10px 60px; 
     font-size: 20px;
     font-weight: bold; 
     position: relative ;
@@ -159,13 +155,15 @@ body {
 
 #hello {
   left: 50px ; 
+  right: 50px; 
   position: relative; 
-  margin: 20px ; 
+  margin: 10px ; 
 
   width: 400px !important; 
   height: 260px !important; 
 
   float: left; 
+
 
 }
 
