@@ -88,11 +88,18 @@ Input {
 .searchdiv {
     
     max-width: 100%;
-
+    position: relative;
     background-image: url("sky.jpeg");
     height: 500px; 
 
   }
+
+
+ .second {
+     position: relative;
+
+     height: 650px;
+ } 
 
 .yo {
     display: flex !important; 
@@ -135,14 +142,10 @@ body {
 
 .recent {
 
-    padding: 10px 60px; 
+    padding: 10px 10px; 
     font-size: 20px;
     font-weight: bold; 
     position: relative ;
-    margin-top: 25px; 
-   
-
-
 }
 
 .maps {
@@ -153,18 +156,20 @@ body {
 
 }
 
+
+
+
+
 #hello {
   left: 50px ; 
   right: 50px; 
-  position: relative; 
-  margin: 10px ; 
 
+  margin: 0px 10px 0px 10px; 
+  margin-bottom: 30px;
   width: 400px !important; 
   height: 260px !important; 
-
   float: left; 
-
-
+    padding:"40px";
 }
 
 

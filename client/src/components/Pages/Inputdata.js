@@ -11,7 +11,7 @@ import ReactMapboxGl, { Layer, Feature, Marker } from "react-mapbox-gl";
 import Nav from "../Nav";
 
 // import dotenv from 'dotenv'
-
+import Footer from "../Footer"; 
 
 
 
@@ -238,6 +238,8 @@ class Inputdata extends Component {
                     </Modal>
                    
                 </Container>
+                <div><Footer /></div>
+           
             </div>
         );
     }

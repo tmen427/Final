@@ -6,7 +6,7 @@ function Footer(){
         <div class='bottom'>
         
         <footer>
-            <div className="copyright">copyright &copy; 2019 Mapa</div>
+            <div className="copyright">copyright &copy; 2021 Mapa</div>
   
         </footer>
         </div>

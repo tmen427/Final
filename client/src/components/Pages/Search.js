@@ -126,11 +126,13 @@ handleFormSubmit = event => {
         return (
  
   
-    <div class='everything'>
-             <div class='searchdiv'> 
+    <div>
+            
+            
+        <div class='searchdiv'> 
                       <form class = 'form-search form-inline'>
                      
-                    <div class='intro1'><strong>Welcome to MAPA! Find nearby bathrooms, water fountains & bike racks!</strong> </div>             
+                    <div class='intro1'><strong>Find nearby bathrooms, water fountains & bike racks!</strong> </div>             
                                             <Input class='Searchterm'
                                                 name="locationSearch"
                                                 value={this.state.locationSearch}
@@ -146,20 +148,27 @@ handleFormSubmit = event => {
                                             </Button>         
                     </form>
 
-                     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             </div>
                    
 
 
 
- {(console.log(this.state.venues.filter(item =>  item.saved).slice(Math.max(this.state.venues.length - 8, 1)).map(item =>  item.address ).reverse()))}
-<div className='holder'>
-
-
-
-
-</div>
-
-{ this.state.show ? <div>
+{ this.state.show ? <div className="second">
 
     <div className='recent'> Recent Searches</div>  
     {(this.state.venues.filter(item =>  item.saved).slice(Math.max(this.state.venues.length - 10, 1)).map(item =>
@@ -203,8 +212,8 @@ handleFormSubmit = event => {
 
 </div>:
 
-<div>
-  <div className='recent'> Did you mean?....</div>  
+<div className="second">
+  <div className='recent'> Oops! Nothing was found. Did you mean?....</div>  
 {(this.state.search_found.map(item =>
          <div id='hello'>
                        <Map className='maps'  
@@ -215,6 +224,7 @@ handleFormSubmit = event => {
                                 containerStyle={{
                                     width: '100%',
                                     height: '220px',
+                             
                                 }}
                             
                             >   
@@ -239,12 +249,15 @@ handleFormSubmit = event => {
 
                       </div>   
 ).reverse())}
-</div>
-                            }
 
+</div>
+
+ }
+
+<Footer />
                     
 </div>
-    
+        
         );
     }
 }
