@@ -7,6 +7,7 @@ import Nav from "../Nav";
 
 import { Button, Modal } from 'react-bootstrap';
 import ReactMapboxGl, { Layer, Feature, Marker } from "react-mapbox-gl";
+import Footer from "../Footer"; 
 
 const Map = ReactMapboxGl({
     accessToken: "pk.eyJ1IjoiZGF2aWR2bzE5OTAiLCJhIjoiY2p4MmsyOXJsMDAxYTQ4cGg3cHMwcTZkMCJ9.mHHhKy1QIfmGF_TC88vSUg"
@@ -146,6 +147,7 @@ class Search extends Component {
 
 
                 </Container>
+                <Footer />
             </div>
         );
     }
